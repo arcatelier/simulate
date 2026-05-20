@@ -17,9 +17,9 @@ $sp: 767px;
   }
 }
 
-// スマホ（767px以下）
+// デスクトップ（1025px以上）
 @mixin sp {
-  @media screen and (max-width: $sp) {
+  @media screen and (min-width: $pc) {
   @content;
   }
 }
