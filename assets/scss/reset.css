@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+li,
+figure,
+blockquote,
+dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-size: max(1.2vw, 14px);
+}
