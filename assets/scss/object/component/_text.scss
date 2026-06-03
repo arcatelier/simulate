@@ -1,0 +1,80 @@
+.c-text--title {
+  text-align: center;
+  font-weight: 700;
+  color: #db5e6f;
+}
+
+.c-text--mainTitle {
+  text-align: center;
+  font-size: clamp(15px, 6vw, 25px);
+  padding: 15px 0;
+}
+
+.c-text--titleContents {
+  text-align: center;
+  color: #7e7676;
+  font-size: clamp(10px, 3vw, 12px);
+}
+
+.c-text--number {
+  display: flex;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: clamp(20px, 6vw, 30px);
+  background-color: #db5e6f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.c-text--plan {
+  font-size: clamp(15px, 6vw, 25px);
+  font-weight: 500;
+}
+
+.c-text--planSection {
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 5px;
+  font-size: clamp(13px, 4vw, 15px);
+}
+
+.c-text--planText {
+  text-align: center;
+  color: #7e7676;
+  font-size: clamp(10px, 3vw, 12px);
+}
+
+.c-text--price {
+  font-size: clamp(25px, 8vw, 40px);
+  color: #443a32;
+  font-weight: 900;
+}
+
+.c-text--course,
+.c-text--taxIn,
+.c-text--detailContents {
+  color: #7e7676;
+  font-size: clamp(13px, 4vw, 17px);
+}
+
+.c-text--check {
+  color: #db5e6f;
+}
+
+.c-text--detailContents.-campaign {
+  color: #443a32;
+  font-weight: 500;
+}
+
+.c-text--recommended {
+  display: inline-block;
+  color: #fff;
+  background-color: #db5e6f;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: clamp(10px, 4vw, 15px);
+  text-align: center;
+}

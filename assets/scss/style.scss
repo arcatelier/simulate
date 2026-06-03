@@ -12,6 +12,7 @@
 // ==========================================================================*/
 
 @use 'layout/_header';
+@use 'layout/_main';
 
 /*// ==========================================================================
 // Object
@@ -24,6 +25,7 @@
 @use 'object/component/_btn';
 @use 'object/component/_img';
 @use 'object/component/_line';
+@use 'object/component/_text';
 
 /*// -----------------------------------------------------------------
 // Project
@@ -31,6 +33,10 @@
 
 @use 'object/project/_headerMenu';
 @use 'object/project/_hamburgerMenu';
+@use 'object/project/_plan';
+@use 'object/project/_price';
+@use 'object/project/_step';
+@use 'object/project/_title';
 
 /*// -----------------------------------------------------------------
 // Utility

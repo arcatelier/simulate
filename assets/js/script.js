@@ -18,5 +18,25 @@ window.addEventListener("load", () => {
     });
   }
 
+  /**
+  * プラン選択後の背景色変更の処理
+  */
+  function selectPlan() {
+    const planBoxes = document.querySelectorAll(".p-planBox");
+
+    planBoxes.forEach(function(box) {
+      box.addEventListener("click", function() {
+        // 全部のis-selectedを外す
+        planBoxes.forEach(function(card) {
+          card.classList.remove("is-selected");
+        });
+
+        // クリックしたものだけis-selectedをつける
+        box.classList.add("is-selected");
+      });
+    });
+  }
+
   changeButtonText();
+  selectPlan();
 });
