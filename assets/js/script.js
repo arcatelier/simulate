@@ -19,24 +19,25 @@ window.addEventListener("load", () => {
   }
 
   /**
-  * プラン選択後の背景色変更の処理
+  * カード選択後の背景色変更の処理
   */
-  function selectPlan() {
-    const planBoxes = document.querySelectorAll(".p-planBox");
+  function selectCard(selector) {
+    const cards = document.querySelectorAll(selector);
 
-    planBoxes.forEach(function(box) {
-      box.addEventListener("click", function() {
+    cards.forEach(function(card) {
+      card.addEventListener("click", function() {
         // 全部のis-selectedを外す
-        planBoxes.forEach(function(card) {
-          card.classList.remove("is-selected");
+        cards.forEach(function(item) {
+          item.classList.remove("is-selected");
         });
 
         // クリックしたものだけis-selectedをつける
-        box.classList.add("is-selected");
+        card.classList.add("is-selected");
       });
     });
   }
 
   changeButtonText();
-  selectPlan();
+  selectCard(".p-planBox");
+  selectCard(".p-frequencyBox");
 });

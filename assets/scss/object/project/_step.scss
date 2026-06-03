@@ -1,8 +1,13 @@
 .p-stepWrap {
-  margin: 48px 0;
+  margin: 48px 15px;
 }
 
-.p-step__plan {
+.p-stepWrap__frequency {
+  background-color: #eecfda;
+  padding: 48px 15px;
+}
+
+.p-step {
   display: flex;
   align-items: center;
   margin-bottom: 32px;

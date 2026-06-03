@@ -35,10 +35,11 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #ebdae0;
 }
 
 .l-main {
-  margin: 48px 15px 80px;
+  margin: 48px 0 80px;
 }
 
 /*// ==========================================================================
@@ -144,6 +145,10 @@ body {
   font-size: clamp(10px, 3vw, 12px);
 }
 
+.c-text--planText.-frequency {
+  height: 34px;
+}
+
 .c-text--price {
   font-size: clamp(25px, 8vw, 40px);
   color: #443a32;
@@ -176,9 +181,38 @@ body {
   text-align: center;
 }
 
+.c-text--recommendedFrequency {
+  font-size: clamp(10px, 4vw, 15px);
+  text-align: center;
+}
+
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
+.p-frequencyBox__wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-frequencyBox {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.p-frequencyBox.is-selected {
+  background-color: #e08f9a;
+}
+
+.p-frequencyBox.is-selected .c-text--planSection,
+.p-frequencyBox.is-selected .c-text--planText {
+  color: #fff;
+}
+
 .p-headerMenu {
   display: flex;
   align-items: center;
@@ -313,10 +347,15 @@ body {
 }
 
 .p-stepWrap {
-  margin: 48px 0;
+  margin: 48px 15px;
 }
 
-.p-step__plan {
+.p-stepWrap__frequency {
+  background-color: #eecfda;
+  padding: 48px 15px;
+}
+
+.p-step {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
@@ -327,6 +366,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 15px;
 }
 
 /*// -----------------------------------------------------------------

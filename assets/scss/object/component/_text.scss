@@ -47,6 +47,10 @@
   font-size: clamp(10px, 3vw, 12px);
 }
 
+.c-text--planText.-frequency {
+  height: 34px;
+}
+
 .c-text--price {
   font-size: clamp(25px, 8vw, 40px);
   color: #443a32;
@@ -75,6 +79,11 @@
   background-color: #db5e6f;
   padding: 5px 15px;
   border-radius: 15px;
+  font-size: clamp(10px, 4vw, 15px);
+  text-align: center;
+}
+
+.c-text--recommendedFrequency {
   font-size: clamp(10px, 4vw, 15px);
   text-align: center;
 }

@@ -1,0 +1,25 @@
+
+.p-frequencyBox__wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.p-frequencyBox {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.p-frequencyBox.is-selected {
+  background-color: #e08f9a;
+}
+
+.p-frequencyBox.is-selected .c-text--planSection,
+.p-frequencyBox.is-selected .c-text--planText {
+  color: #fff;
+}
