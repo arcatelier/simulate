@@ -13,15 +13,39 @@
   <header class="l-header">
     <img class="c-img--headerLogo" src="assets/img/logo.png" alt="ロゴ">
     <div class="p-headerMenu">
-      <a class="c-btn--header" src="#">無料相談</a>
-      <div class="p-hamburgerMenu">
+      <a class="c-btn--header" src="#">お問い合わせ</a>
+      <button class="p-hamburgerMenu js-menu-open" type="button">
+        <div class="c-line u-marginBottom"></div>
+        <div class="c-line u-marginBottom"></div>
         <div class="c-line"></div>
-        <div class="c-line"></div>
-        <div class="c-line"></div>
-      </div>
+      </button>
+      <nav class="p-hamburgerMenu__body js-menu-content">
+        <div class="p-hamburgerMenu__header">
+          <img class="c-img--headerLogo -hamburgerMenu" src="assets/img/logo.png" alt="ロゴ">
+          <button class="c-btn--close js-menu-close">×</button>
+        </div>
+        <ul class="p-hamburgerMenu__list">
+          <li class="p-hamburgerMenu__item"><a class="c-link" href="#">トップ</a></li>
+          <li class="p-hamburgerMenu__item"><a class="c-link" href="#">サービス・メニュー</a></li>
+          <li class="p-hamburgerMenu__item"><a class="c-link" href="#">料金</a></li>
+          <li class="p-hamburgerMenu__item"><a class="c-link" href="#">スタッフ紹介</a></li>
+          <li class="p-hamburgerMenu__item"><a class="c-link" href="#">アクセス</a></li>
+          <li class="p-hamburgerMenu__item"><a class="c-link" href="#">about</a></li>
+        </ul>
+        <div class="p-hamburgerMenu__footer">
+          <div class="p-hamburgerMenu__contactWrap">
+            <a class="c-btn--contact" href="#">お問い合わせ →</a>
+          </div>
+          <a class="c-btn--footer" href="#">よくある質問</a>
+          <a class="c-btn--footer" href="#">店舗一覧</a>
+        </div>
+      </nav>
     </div>
   </header>
-  <script src="js/script.js"></script>
+  <main class="l-main">
+    <h1 class="c-text--title">料金シミュレーター</h1>
+  </main>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

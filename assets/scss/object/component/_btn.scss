@@ -1,0 +1,34 @@
+@use '../../foundation/mixin' as *;
+
+.c-btn--header {
+  font-size: clamp(10px, 3vw, 20px);
+  font-weight: 500;
+  color: white;
+  background-color: #db5e6f;
+  padding: 5px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.c-btn--close {
+  font-size: 20px;
+  color: gray;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.c-btn--contact {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  background-color: #db5e6f;
+  font-size: clamp(15px, 5vw, 20px);
+  padding: 10px 0;
+  border-radius: 25px;
+}
+
+.c-btn--footer {
+  color: #949090;
+  padding: 10px 0;
+}

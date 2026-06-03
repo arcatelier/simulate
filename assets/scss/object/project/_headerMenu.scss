@@ -1,0 +1,7 @@
+@use '../../foundation/mixin' as *;
+
+.p-headerMenu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

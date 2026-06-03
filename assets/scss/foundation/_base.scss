@@ -6,4 +6,9 @@
 
 body {
   background-color: #f0e8eb;
+  padding-top: 56px;
+}
+
+body.is-show {
+  opacity: 1;
 }

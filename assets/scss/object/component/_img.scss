@@ -1,6 +1,8 @@
 @use '../../foundation/mixin' as *;
 
 .c-img--headerLogo {
-  width: 120px;
+  min-width: 120px;
+  max-width: 150px;
+  width: 100%;
   object-fit: contain;
 }
