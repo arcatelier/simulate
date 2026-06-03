@@ -1,0 +1,46 @@
+.p-optionBox {
+  display: flex;
+  align-items: center;
+  background-color: #f5f3f7;
+  border: 2px solid #f1d5dc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.p-option {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.p-optionBox__input {
+  display: none;
+}
+
+.p-optionBox__check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.p-optionBox__input:checked + .p-optionBox__check {
+  background-color: #db5e6f;
+  border-color: #db5e6f;
+
+  &::after {
+    content: "✔";
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
