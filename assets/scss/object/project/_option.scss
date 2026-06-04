@@ -12,6 +12,11 @@
   }
 }
 
+.p-optionBox.is-selected {
+  border-color: #db5e6f;
+  background-color: #f5eff0;
+}
+
 .p-option {
   display: flex;
   justify-content: space-between;

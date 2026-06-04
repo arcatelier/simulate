@@ -192,6 +192,17 @@ body {
   font-weight: 600;
 }
 
+.c-text--result {
+  color: #e4abb2;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.c-text--resultJp {
+  color: #fff;
+  font-weight: 700;
+}
+
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
@@ -309,6 +320,11 @@ body {
   margin-bottom: 0;
 }
 
+.p-optionBox.is-selected {
+  border-color: #db5e6f;
+  background-color: #f5eff0;
+}
+
 .p-option {
   display: flex;
   justify-content: space-between;
@@ -396,6 +412,22 @@ body {
   background-color: #bebbbd;
   transform: scaleY(0.5);
   margin: 20px 0;
+}
+
+.p-resultWrap {
+  margin: 0 15px;
+  background-color: #f5f3f7;
+  border-radius: 10px;
+}
+
+.p-resultTitle {
+  background-color: #db5e6f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 0;
 }
 
 .p-stepWrap {
