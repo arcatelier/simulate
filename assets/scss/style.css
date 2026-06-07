@@ -328,6 +328,7 @@ body {
 .p-option {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -414,13 +415,13 @@ body {
   margin: 20px 0;
 }
 
-.p-resultWrap {
+.p-result__wrap {
   margin: 0 15px;
   background-color: #f5f3f7;
   border-radius: 10px;
 }
 
-.p-resultTitle {
+.p-result__title {
   background-color: #db5e6f;
   display: flex;
   flex-direction: column;
@@ -428,6 +429,25 @@ body {
   align-items: center;
   border-radius: 10px 10px 0 0;
   padding: 20px 0;
+}
+
+.p-result {
+  padding: 20px;
+}
+
+.p-resultBox {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.p-resultBox:last-child {
+  margin-bottom: 0;
+}
+
+.p-resultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .p-stepWrap {

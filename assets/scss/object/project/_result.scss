@@ -1,10 +1,10 @@
-.p-resultWrap {
+.p-result__wrap {
   margin: 0 15px;
   background-color: #f5f3f7;
   border-radius: 10px;
 }
 
-.p-resultTitle {
+.p-result__title {
   background-color: #db5e6f;
   display: flex;
   flex-direction: column;
@@ -12,4 +12,24 @@
   align-items: center;
   border-radius: 10px 10px 0 0;
   padding: 20px 0;
+}
+
+.p-result {
+  padding: 20px;
+}
+
+.p-resultBox {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.p-resultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

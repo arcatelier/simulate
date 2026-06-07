@@ -74,7 +74,7 @@
       <div class="p-planBox__recommendedWrap">
         <span class="c-text--recommended">おすすめ</span>
       </div>
-      <label class="p-planBox" data-plan="standard" data-price="160,000"> <!---スタンダードプラン--->
+      <label class="p-planBox" data-plan="standard" data-price="160000"> <!---スタンダードプラン--->
         <p class="c-text--planSection">スタンダードプラン</p>
         <p class="c-text--planText">整体＋美容で、内側からキレイになりたい方に</p>
         <div class="p-price">
@@ -100,7 +100,7 @@
           </div>
         </div>
       </label>
-      <label class="p-planBox" data-plan="premium" data-price="228,000"> <!---プレミアムプラン--->
+      <label class="p-planBox" data-plan="premium" data-price="228000"> <!---プレミアムプラン--->
         <p class="c-text--planSection">プレミアムプラン</p>
         <p class="c-text--planText">体の根本から変えて、理想の自分へ近づきたい方に</p>
         <div class="p-price">
@@ -153,39 +153,39 @@
         <p class="c-text--number u-marginRight10">3</p>
         <p class="c-text--plan">オプションを選ぶ</p>
       </div>
-      <label class="p-optionBox">
+      <label class="p-optionBox" data-price="6000">
         <input type="checkbox" class="p-optionBox__input">
         <span class="p-optionBox__check"></span>
         <div class="p-option">
-          <p class="c-text--optionMenu">整体施術60分</p>
-          <p class="c-text--optionPrice">¥6,600</p>
+          <p class="c-text--optionMenu">整体施術60分 1回追加</p>
+          <p class="c-text--optionPrice">¥6,000</p>
         </div>
       </label>
-      <label class="p-optionBox">
+      <label class="p-optionBox" data-price="3000">
         <input type="checkbox" class="p-optionBox__input">
         <span class="p-optionBox__check"></span>
         <div class="p-option">
           <p class="c-text--optionMenu">整体施術30分延長</p>
-          <p class="c-text--optionPrice">¥3,300</p>
+          <p class="c-text--optionPrice">¥3,000</p>
         </div>
       </label>
-      <label class="p-optionBox">
+      <label class="p-optionBox" data-price="9000">
         <input type="checkbox" class="p-optionBox__input">
         <span class="p-optionBox__check"></span>
         <div class="p-option">
-          <p class="c-text--optionMenu">フォトフェイシャル20分</p>
-          <p class="c-text--optionPrice">¥9,900</p>
+          <p class="c-text--optionMenu">フォトフェイシャル20分<br>1回追加</p>
+          <p class="c-text--optionPrice">¥9,000</p>
         </div>
       </label>
-      <label class="p-optionBox">
+      <label class="p-optionBox" data-price="5000">
         <input type="checkbox" class="p-optionBox__input">
         <span class="p-optionBox__check"></span>
         <div class="p-option">
-          <p class="c-text--optionMenu">美容鍼</p>
-          <p class="c-text--optionPrice">¥5,500</p>
+          <p class="c-text--optionMenu">美容鍼追加 1回追加</p>
+          <p class="c-text--optionPrice">¥5,000</p>
         </div>
       </label>
-      <label class="p-optionBox">
+      <label class="p-optionBox" data-price="0">
         <input type="checkbox" class="p-optionBox__input">
         <span class="p-optionBox__check"></span>
         <div class="p-option">
@@ -194,8 +194,8 @@
         </div>
       </label>
     </section>
-    <div class="p-resultWrap">
-      <div class="p-resultTitle">
+    <div class="p-result__wrap">
+      <div class="p-result__title">
         <p class="c-text--result">SIMULATION RESULT</p>
         <p class="c-text--resultJp">料金シミュレーション結果</p>
       </div>
@@ -207,19 +207,25 @@
             <p class="c-text--resultPrice" id="js-result-price"></p>
           </div>
         </div>
-        <div class="p-resultRow">
-          <p class="c-text--resultLabel">頻度</p>
-          <p class="c-test--resultFrequency"></p>
+        <div class="p-resultBox">
+          <div class="p-resultRow">
+            <p class="c-text--resultLabel">頻度</p>
+            <p class="c-test--resultFrequency" id="js-result-frequency"></p>
+          </div>
         </div>
         <div class="p-resultBox">
           <p class="c-text--resultLabel">オプション</p>
-          <div class="p-resultRow">
+          <div id="js-resultRow-option">
             <p class="c-text--resultOption" id="js-result-option"></p>
             <p class="c-text--resultPrice" id="js-result-optionPrice"></p>
           </div>
         </div>
-      </div>
-      <div class="p-result__total">
+        <div class="p-result__totalWrap">
+          <p class="c-text--total">TOTAL</p>
+          <p class="c-text--totalPayment">お支払い料金</p>
+          <p class="c-text--totalPrice" id="js-result-total">¥0</p>
+          <p class="c-text--totalTax" id="js-result-totalTax">税込 ¥0</p>
+        </div>
       </div>
     </div>
   </main>
