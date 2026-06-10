@@ -203,6 +203,35 @@ body {
   font-weight: 700;
 }
 
+.c-text--resultLabel {
+  color: #7e7676;
+  font-weight: 500;
+}
+
+.c-text--resultPlan,
+.c-text--resultPrice,
+.c-test--resultFrequency,
+.c-text--resultOption {
+  color: #7e7676;
+  font-weight: 600;
+}
+
+.c-text--resultPrice,
+.c-test--resultFrequency {
+  color: #db5e6f;
+}
+
+.c-text--total {
+  color: #db5e6f;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+
+.c-text--totalPayment {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
@@ -448,6 +477,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.p-result__totalWrap {
+  background-color: #ebdae0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
 .p-stepWrap {

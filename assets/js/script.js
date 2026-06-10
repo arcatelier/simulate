@@ -65,14 +65,21 @@ window.addEventListener("load", () => {
     // 選択されたプランを取得
     const selectedPlan = document.querySelector(".p-planBox.is-selected");
     const selectedFrequency = document.querySelector(".p-frequencyBox.is-selected");
-    const selectedOption = document.querySelector(".p-optionBox.is-selected");
 
     // プラン名と金額を表示
     if(selectedPlan){
       const planName = selectedPlan.querySelector(".c-text--planSection").textContent;
       const planPrice = Number(selectedPlan.dataset.price);
+      const planData = selectedPlan.dataset.plan;
       document.getElementById("js-result-plan").textContent = planName;
-      document.getElementById("js-result-price").textContent = "¥" + planPrice.toLocaleString();
+
+      // プレミアムプランは6月末まで10％OFF
+      if(planData === "premium"){
+        const discountPrice = Math.round(planPrice * 0.9);
+        document.getElementById("js-result-price").textContent = "¥" + planPrice.toLocaleString() + " → ¥" + discountPrice.toLocaleString();
+      } else {
+        document.getElementById("js-result-price").textContent = "¥" + planPrice.toLocaleString();
+      }
     }
 
     // 頻度を表示
@@ -82,7 +89,10 @@ window.addEventListener("load", () => {
     }
 
     // 合計金額を表示
-    const planPrice = selectedPlan ? Number(selectedPlan.dataset.price) : 0;
+    const planData = selectedPlan ? selectedPlan.dataset.plan : null;
+    const basePlanPrice = selectedPlan ? Number(selectedPlan.dataset.price) : 0;
+    const planPrice = planData === "premium" ? Math.round(basePlanPrice * 0.9) : basePlanPrice;
+
 
     // オプション名と金額を表示
     let optionTotal = 0;

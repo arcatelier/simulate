@@ -33,3 +33,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.p-result__totalWrap {
+  background-color: #ebdae0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
