@@ -5,4 +5,8 @@
   align-items: center;
   background-color: #db5e6f;
   border-radius: 10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }

@@ -259,7 +259,8 @@ body {
 }
 
 .c-text--faqTitleContents {
-  font-size: 13px;
+  font-size: clamp(10px, 4vw, 17px);
+  color: #7e7676;
 }
 
 /*// -----------------------------------------------------------------
@@ -273,6 +274,9 @@ body {
   background-color: #db5e6f;
   border-radius: 10px;
 }
+.p-applyWrap:hover {
+  opacity: 0.6;
+}
 
 .p-faqWrap {
   background-color: #eecfda;
@@ -281,6 +285,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.p-faqTab {
+  margin: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.p-faqTab__button {
+  background-color: #fff;
+  color: #7e7676;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: clamp(10px, 3.5vw, 15px);
+  border: 1px solid #cec6c6;
+}
+
+.p-faqTab__button.is-selected {
+  background-color: #e08f9a;
+  color: #fff;
+  border: none;
 }
 
 .p-frequencyBox__wrap {

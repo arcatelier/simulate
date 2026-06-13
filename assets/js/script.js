@@ -120,8 +120,29 @@ window.addEventListener("load", () => {
     document.getElementById("js-result-totalTax").textContent = "税込 ¥" + totalTax.toLocaleString();
   }
 
+  /**
+  * FAQカテゴリ選択後の背景色変更の処理
+  */
+  function selectButton(selector) {
+    const btns = document.querySelectorAll(selector);
+
+    btns.forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        // 全部のis-selectedを外す
+        btns.forEach(function(item) {
+          item.classList.remove("is-selected");
+        });
+
+        // クリックしたものだけis-selectedをつける
+        btn.classList.add("is-selected");
+        faqButton();
+      });
+    });
+  }
+
   changeButtonText();
   selectCard(".p-planBox");
   selectCard(".p-frequencyBox");
   toggleOption();
+  selectButton(".p-faqTab__button");
 });

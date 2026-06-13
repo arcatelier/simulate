@@ -153,5 +153,6 @@
 }
 
 .c-text--faqTitleContents {
-  font-size: 13px;
+  font-size: clamp(10px, 4vw, 17px);
+  color: #7e7676;
 }
