@@ -147,12 +147,12 @@
   padding-bottom: 5px;
 }
 
-.c-text--faqMainTitle {
-  color: #7e7676;
-  padding-bottom: 10px;
-}
-
 .c-text--faqTitleContents {
   font-size: clamp(10px, 4vw, 17px);
   color: #7e7676;
+}
+
+.c-text--faq {
+  color: #e596a1;
+  font-weight: 700;
 }

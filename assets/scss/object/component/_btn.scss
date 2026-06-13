@@ -39,3 +39,17 @@
   font-size: 17px;
   font-weight: 700;
 }
+
+.c-btn--answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 17px;
+  line-height: 1;
+  border-radius: 50%;
+  color: #e9bcc2;
+  border: 1px solid #e9bcc2;
+}
