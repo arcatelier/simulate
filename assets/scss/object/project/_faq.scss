@@ -12,6 +12,10 @@
   padding-bottom: 10px;
 }
 
+.p-faq {
+  width: 100%;
+}
+
 .p-faqTab {
   margin: 15px;
   display: flex;
@@ -53,8 +57,30 @@
 .p-faqQuestionWrap {
   display: flex;
   gap: 15px;
+  align-items: flex-start;
 }
 
 .p-faqQuestion {
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+}
+
+.p-faqContents {
+  display: none;
+}
+
+.p-faqContents.is-show {
+  display: block;
+}
+
+.p-faqAnswer {
+  margin-top: 20px;
+  display: none;
+}
+
+.p-faqAnswer.is-open {
+  display: block;
 }

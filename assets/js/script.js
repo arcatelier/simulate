@@ -121,10 +121,11 @@ window.addEventListener("load", () => {
   }
 
   /**
-  * FAQカテゴリ選択後の背景色変更の処理
+  * FAQカテゴリ選択後の背景色変更およびコンテンツ表示処理
   */
   function selectButton(selector) {
     const btns = document.querySelectorAll(selector);
+    const contents = document.querySelectorAll(".p-faqContents");
 
     btns.forEach(function(btn) {
       btn.addEventListener("click", function() {
@@ -133,11 +134,29 @@ window.addEventListener("load", () => {
           item.classList.remove("is-selected");
         });
 
+        // FAQを全部非表示
+        contents.forEach(function(content) {
+          content.classList.remove("is-show");
+        });
+
         // クリックしたものだけis-selectedをつける
         btn.classList.add("is-selected");
-        faqButton();
+
+        // 対応するFAQを表示
+        const target = btn.dataset.target;
+        document.getElementById(target).classList.add("is-show");
       });
     });
+
+  /**
+  * FAQボタンのアコーディオン実装
+  */
+  function toggleFaq() {
+    const buttons = document.querySelectorAll(".js-faqButton");
+
+    buttons.
+  }
+
   }
 
   changeButtonText();

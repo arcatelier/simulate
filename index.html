@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="assets/scss/reset.css" />
   <link rel="stylesheet" href="assets/scss/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Kiwi+Maru&family=Shippori+Mincho&display=swap" rel="stylesheet">
   <title>responsive-site</title>
 </head>
 <body>
@@ -237,18 +240,32 @@
       <p class="c-text--faqTitleContents">サービスやプランに関する疑問にお答えします</p>
       <section class="p-faq">
         <div class="p-faqTab">
-          <button class="p-faqTab__button" data-target="treatment">施術に関して</button>
+          <button class="p-faqTab__button is-selected" data-target="treatment">施術に関して</button>
           <button class="p-faqTab__button" data-target="payment">支払いに関して</button>
         </div>
-        <dl class="p-faqList">
+        <dl class="p-faqContents is-show" id="treatment"> <!---施術に関するFAQ--->
           <div class="p-faqItem">
             <div class="p-faqQuestionWrap">
               <p class="c-text--faq">01</p>
-              <dt class="p-faqQuestion">
-                初めてでも施術を受けられますか？<button class="c-btn--answer">+</button>
-              </dt>
+              <div class="p-faqBody">
+                <dt class="p-faqQuestion">
+                  初めてでも施術を受けられますか？
+                  <button class="c-btn--answer">+</button>
+                </dt>
+                <dd class="p-faqAnswer">はい。初回はカウンセリング（所要時間60分程度）を行い、お悩みや要望に合わせて施術内容をご提案します。</dd>
+              </div>
             </div>
-            <dd class="p-faqAnswer">はい。初回はカウンセリング（所要時間60分程度）を行い、お悩みや要望に合わせて施術内容をご提案します。</dd>
+          </div>
+        </dl>
+        <dl class="p-faqContents" id="payment"> <!---支払いに関するFAQ--->
+          <div class="p-faqItem">
+            <div class="p-faqQuestionWrap">
+              <p class="c-text--faq">01</p>
+              <div class="p-faqBody">
+                <dt class="p-faqQuestion">支払方法を教えてください。<button class="c-btn--answer js-faqButton">+</button></dt>
+                <dd class="p-faqAnswer">現金、クレジットカード各種、電子マネーからお選びいただけます。</dd>
+              </div>
+            </div>
           </div>
         </dl>
       </section>
