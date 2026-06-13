@@ -151,11 +151,6 @@ window.addEventListener("load", () => {
   /**
   * FAQボタンのアコーディオン実装
   */
-  function toggleFaq() {
-    const buttons = document.querySelectorAll(".js-faqButton");
-
-    buttons.
-  }
 
   }
 

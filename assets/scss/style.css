@@ -55,7 +55,7 @@ body {
   color: white;
   background-color: #db5e6f;
   padding: 5px 13px;
-  border-radius: 20px;
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -74,7 +74,7 @@ body {
   background-color: #db5e6f;
   font-size: clamp(15px, 5vw, 20px);
   padding: 10px 0;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .c-btn--footer {
@@ -286,7 +286,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #db5e6f;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .p-applyWrap:hover {
   opacity: 0.6;
@@ -389,7 +389,7 @@ body {
 .p-frequencyBox {
   padding: 10px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   display: block;
   width: 100%;
 }
@@ -484,7 +484,7 @@ body {
   align-items: center;
   background-color: #f5f3f7;
   border: 2px solid #f1d5dc;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 15px;
   margin-bottom: 15px;
 }
@@ -534,7 +534,7 @@ body {
   padding: 25px;
   border: 2px solid #f1d5dc;
   background-color: #f5f3f7;
-  border-radius: 20px;
+  border-radius: 15px;
   display: block;
   margin-bottom: 20px;
 }
@@ -565,7 +565,7 @@ body {
 
 .p-plan__detail.-campaign {
   background-color: #f3e9bd;
-  border-radius: 8px;
+  border-radius: 15px;
   margin: 0 -10px;
   padding: 8px 10px;
 }
@@ -590,7 +590,7 @@ body {
 .p-result__wrap {
   margin: 0 15px;
   background-color: #f5f3f7;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid #db5e6f;
 }
 
@@ -600,7 +600,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
   padding: 20px 0;
 }
 
