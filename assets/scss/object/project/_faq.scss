@@ -54,10 +54,15 @@
   }
 }
 
-.p-faqQuestionWrap {
+.p-faqQuestion__wrap {
   display: flex;
   gap: 15px;
   align-items: flex-start;
+  align-items: center;
+}
+
+.p-faqQuestion__body {
+  width: 100%;
 }
 
 .p-faqQuestion {

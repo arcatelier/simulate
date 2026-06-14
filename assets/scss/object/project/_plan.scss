@@ -4,11 +4,15 @@
   background-color: #f5f3f7;
   border-radius: 15px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.p-planBox--light {
+  margin-bottom: 22.5px;
 }
 
 .p-planBox.is-selected {

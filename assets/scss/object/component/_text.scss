@@ -49,6 +49,7 @@
 
 .c-text--planText.-frequency {
   height: 34px;
+  text-align: start;
 }
 
 .c-text--price {
@@ -61,7 +62,7 @@
 .c-text--taxIn,
 .c-text--detailContents {
   color: #7e7676;
-  font-size: clamp(13px, 4vw, 17px);
+  font-size: clamp(10px, 3vw, 17px);
 }
 
 .c-text--check {

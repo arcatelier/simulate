@@ -18,8 +18,16 @@ body.is-show {
 }
 
 body {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  color: #4d4646;
+}
+
+.p-faqWrap {
   font-family: "Kiwi Maru", serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -105,7 +113,7 @@ body {
 
 .c-img--headerLogo {
   min-width: 120px;
-  max-width: 150px;
+  max-width: 130px;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -169,6 +177,7 @@ body {
 
 .c-text--planText.-frequency {
   height: 34px;
+  text-align: start;
 }
 
 .c-text--price {
@@ -181,7 +190,7 @@ body {
 .c-text--taxIn,
 .c-text--detailContents {
   color: #7e7676;
-  font-size: clamp(13px, 4vw, 17px);
+  font-size: clamp(10px, 3vw, 17px);
 }
 
 .c-text--check {
@@ -347,10 +356,15 @@ body {
   border-top: 1px solid #e9bcc2;
 }
 
-.p-faqQuestionWrap {
+.p-faqQuestion__wrap {
   display: flex;
   gap: 15px;
   align-items: flex-start;
+  align-items: center;
+}
+
+.p-faqQuestion__body {
+  width: 100%;
 }
 
 .p-faqQuestion {
@@ -497,6 +511,11 @@ body {
   background-color: #f5eff0;
 }
 
+.p-optionBox.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 .p-option {
   display: flex;
   justify-content: space-between;
@@ -536,10 +555,14 @@ body {
   background-color: #f5f3f7;
   border-radius: 15px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .p-planBox:last-child {
   margin-bottom: 0;
+}
+
+.p-planBox--light {
+  margin-bottom: 22.5px;
 }
 
 .p-planBox.is-selected {

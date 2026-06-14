@@ -43,6 +43,9 @@ window.addEventListener("load", () => {
   */
   function toggleOption(){
     const optionBoxes = document.querySelectorAll(".p-optionBox");
+    const noneBox = document.querySelector(".js-option-none");
+    const noneCheckbox = noneBox.querySelector(".p-optionBox__input");
+
 
     optionBoxes.forEach(function(box) {
       const checkbox = box.querySelector(".p-optionBox__input");
@@ -52,6 +55,27 @@ window.addEventListener("load", () => {
           box.classList.add("is-selected");
         } else {
           box.classList.remove("is-selected");
+        }
+
+        //「オプションなし」が選択された場合の処理
+        if(noneCheckbox.checked) {
+          optionBoxes.forEach(function(item){
+            if(item !== noneBox) {
+              item.classList.add("is-disabled");
+              const input = item.querySelector(".p-optionBox__input");
+                input.checked = false;
+                input.disabled = true;
+                item.classList.remove("is-selected");
+            }
+          });
+        } else {
+          optionBoxes.forEach(function(item){
+            if (item !== noneBox){
+              item.classList.remove("is-disabled");
+              const input = item.querySelector(".p-optionBox__input");
+              input.disabled = false;
+            }
+          });
         }
         resultPrice();
       });
@@ -147,16 +171,31 @@ window.addEventListener("load", () => {
         document.getElementById(target).classList.add("is-show");
       });
     });
+  }
 
   /**
   * FAQボタンのアコーディオン実装
   */
+  function toggleFaq() {
+    const buttons = document.querySelectorAll(".js-faqButton");
+    buttons.forEach(function(button){
+      button.addEventListener("click",function(){
+        const answer = button.closest(".p-faqQuestion__body").querySelector(".p-faqAnswer");
+        answer.classList.toggle("is-open");
 
+        if(answer.classList.contains("is-open")){
+          button.textContent = "-";
+        } else {
+          button.textContent = "+";
+        }
+      });
+    });  
   }
 
   changeButtonText();
-  selectCard(".p-planBox");
-  selectCard(".p-frequencyBox");
+  selectCard(".js-planBox");
+  selectCard(".js-frequencyBox");
   toggleOption();
-  selectButton(".p-faqTab__button");
+  selectButton(".js-faqTab");
+  toggleFaq();
 });
