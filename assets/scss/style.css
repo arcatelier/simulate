@@ -51,6 +51,11 @@ body {
   margin: 48px 0 80px;
 }
 
+.l-footer {
+  background-color: #5c4a54;
+  color: #fff;
+}
+
 /*// ==========================================================================
 // Object
 // ==========================================================================*/
@@ -111,7 +116,8 @@ body {
   border: 1px solid #e9bcc2;
 }
 
-.c-img--headerLogo {
+.c-img--headerLogo,
+.c-img--footerLogo {
   min-width: 120px;
   max-width: 130px;
   width: 100%;
@@ -284,6 +290,7 @@ body {
 .c-text--faq {
   color: #e596a1;
   font-weight: 700;
+  padding-right: 10px;
 }
 
 /*// -----------------------------------------------------------------
@@ -356,23 +363,16 @@ body {
   border-top: 1px solid #e9bcc2;
 }
 
-.p-faqQuestion__wrap {
-  display: flex;
-  gap: 15px;
-  align-items: flex-start;
-  align-items: center;
-}
-
-.p-faqQuestion__body {
-  width: 100%;
-}
-
 .p-faqQuestion {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   font-size: 15px;
+}
+
+.p-faqQuestion__text {
+  flex: 1;
 }
 
 .p-faqContents {
@@ -384,12 +384,16 @@ body {
 }
 
 .p-faqAnswer {
-  margin-top: 20px;
+  margin: 20px 0 0 27.14px;
   display: none;
 }
 
 .p-faqAnswer.is-open {
   display: block;
+}
+
+.p-footerWrap {
+  padding: 64px 15px 32px;
 }
 
 .p-frequencyBox__wrap {

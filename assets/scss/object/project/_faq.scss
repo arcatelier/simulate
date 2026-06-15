@@ -54,23 +54,16 @@
   }
 }
 
-.p-faqQuestion__wrap {
-  display: flex;
-  gap: 15px;
-  align-items: flex-start;
-  align-items: center;
-}
-
-.p-faqQuestion__body {
-  width: 100%;
-}
-
 .p-faqQuestion {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   font-size: 15px;
+}
+
+.p-faqQuestion__text {
+  flex: 1;
 }
 
 .p-faqContents {
@@ -82,7 +75,7 @@
 }
 
 .p-faqAnswer {
-  margin-top: 20px;
+  margin: 20px 0 0 27.14px;
   display: none;
 }
 

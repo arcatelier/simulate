@@ -180,7 +180,7 @@ window.addEventListener("load", () => {
     const buttons = document.querySelectorAll(".js-faqButton");
     buttons.forEach(function(button){
       button.addEventListener("click",function(){
-        const answer = button.closest(".p-faqQuestion__body").querySelector(".p-faqAnswer");
+        const answer = button.closest(".p-faqItem").querySelector(".p-faqAnswer");
         answer.classList.toggle("is-open");
 
         if(answer.classList.contains("is-open")){
