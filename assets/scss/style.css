@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --fs-xs: clamp(10px, 3vw, 15px);
+  --fs-sm: clamp(15px, 3.5vw, 22px);
+  --fs-md: clamp(20px, 5vw, 24px);
+  --fs-lg: clamp(25px, 7vw, 28px);
+  --fs-xl: clamp(30px, 8vw, 40px);
+}
+
 body {
   background-color: #f0e8eb;
   padding-top: 56px;
@@ -18,17 +26,10 @@ body.is-show {
 }
 
 body {
-  font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
-  font-weight: 450;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 400;
   font-style: normal;
   color: #4d4646;
-}
-
-.p-faqWrap {
-  font-family: "Kiwi Maru", serif;
-  font-weight: 300;
-  font-style: normal;
 }
 
 /*// ==========================================================================
@@ -135,19 +136,22 @@ body {
 .c-text--title {
   text-align: center;
   font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.12em;
   color: #db5e6f;
 }
 
 .c-text--mainTitle {
   text-align: center;
-  font-size: clamp(15px, 6vw, 25px);
+  font-size: var(--fs-lg);
   padding: 15px 0;
 }
 
 .c-text--titleContents {
   text-align: center;
   color: #7e7676;
-  font-size: clamp(10px, 3vw, 12px);
+  font-size: var(--fs-xs);
+  line-height: 1.5;
 }
 
 .c-text--number {
@@ -156,7 +160,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: clamp(20px, 6vw, 30px);
+  font-size: var(--fs-md);
   background-color: #db5e6f;
   border-radius: 50%;
   width: 40px;
@@ -164,7 +168,7 @@ body {
 }
 
 .c-text--plan {
-  font-size: clamp(15px, 6vw, 25px);
+  font-size: var(--fs-md);
   font-weight: 500;
 }
 
@@ -172,13 +176,13 @@ body {
   text-align: center;
   font-weight: 700;
   padding-bottom: 5px;
-  font-size: clamp(13px, 4vw, 15px);
+  font-size: var(--fs-sm);
 }
 
 .c-text--planText {
   text-align: center;
   color: #7e7676;
-  font-size: clamp(10px, 3vw, 12px);
+  font-size: var(--fs-xs);
 }
 
 .c-text--planText.-frequency {
@@ -187,16 +191,20 @@ body {
 }
 
 .c-text--price {
-  font-size: clamp(25px, 8vw, 40px);
+  font-size: var(--fs-lg);
   color: #443a32;
   font-weight: 900;
 }
 
 .c-text--course,
-.c-text--taxIn,
+.c-text--taxIn {
+  color: #7e7676;
+  font-size: var(--fs-xs);
+}
+
 .c-text--detailContents {
   color: #7e7676;
-  font-size: clamp(10px, 3vw, 17px);
+  font-size: var(--fs-sm);
 }
 
 .c-text--check {
@@ -214,12 +222,12 @@ body {
   background-color: #db5e6f;
   padding: 5px 15px;
   border-radius: 15px;
-  font-size: clamp(10px, 4vw, 15px);
+  font-size: var(--fs-xs);
   text-align: center;
 }
 
 .c-text--recommendedFrequency {
-  font-size: clamp(10px, 4vw, 15px);
+  font-size: var(--fs-sm);
   text-align: center;
 }
 
@@ -277,13 +285,13 @@ body {
 
 .c-text--faqSubTitle {
   color: #db5e6f;
-  font-size: 20px;
+  font-size: var(--fs-md);
   font-weight: 500;
   padding-bottom: 5px;
 }
 
 .c-text--faqTitleContents {
-  font-size: clamp(10px, 4vw, 17px);
+  font-size: var(--fs-xs);
   color: #7e7676;
 }
 
@@ -291,6 +299,11 @@ body {
   color: #e596a1;
   font-weight: 700;
   padding-right: 10px;
+}
+
+.c-text--footerContents {
+  font-size: 13px;
+  padding-top: 10px;
 }
 
 /*// -----------------------------------------------------------------

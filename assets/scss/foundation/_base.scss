@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --fs-xs: clamp(10px, 3vw, 15px);
+  --fs-sm: clamp(15px, 3.5vw, 22px);
+  --fs-md: clamp(20px, 5vw, 24px);
+  --fs-lg: clamp(25px, 7vw, 28px);
+  --fs-xl: clamp(30px, 8vw, 40px);
+}
+
 body {
   background-color: #f0e8eb;
   padding-top: 56px;
