@@ -1,0 +1,28 @@
+.p-footerMenu__wrap {
+  padding: 64px 15px 32px;
+}
+
+.p-footerMenu__nav {
+  display: flex;
+}
+
+.p-footerMenu {
+  margin-top: 30px;
+  width: 50%;
+}
+
+.p-footerMenu__title {
+  font-size: var(--fs-sm);
+  display: flex;
+}
+
+.p-footerMenu__list {
+  padding-top: 15px;
+  font-size: var(--fs-xs);
+  display: flex;
+  flex-direction: column;
+}
+
+.p-footerMenu__item {
+  padding-top: 10px;
+}
