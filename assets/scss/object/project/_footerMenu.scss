@@ -3,12 +3,18 @@
 }
 
 .p-footerMenu__nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
-.p-footerMenu {
-  margin-top: 30px;
-  width: 50%;
+.p-footerMenu{
+  margin-top: 40px;
+
+  &:first-child {
+    margin-top: 60px;
+  }
 }
 
 .p-footerMenu__title {
@@ -17,7 +23,6 @@
 }
 
 .p-footerMenu__list {
-  padding-top: 15px;
   font-size: var(--fs-xs);
   display: flex;
   flex-direction: column;
