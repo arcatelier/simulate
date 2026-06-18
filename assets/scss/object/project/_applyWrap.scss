@@ -1,3 +1,5 @@
+@use '../../foundation/mixin' as *;
+
 .p-applyWrap {
   margin: 30px 15px 60px;
   display: flex;
@@ -5,6 +7,10 @@
   align-items: center;
   background-color: #db5e6f;
   border-radius: 15px;
+
+  @include pc {
+    margin: 50px 100px 60px;
+  }
 
   &:hover {
     opacity: 0.6;

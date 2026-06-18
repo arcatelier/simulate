@@ -1,15 +1,25 @@
+@use '../../foundation/mixin' as *;
+
 .c-text--title {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: .12em;
   color: #db5e6f;
+
+  @include pc{
+    font-size: 25px;
+  }
 }
 
 .c-text--mainTitle {
   text-align: center;
   font-size: var(--fs-lg);
   padding: 15px 0;
+
+  @include pc {
+    font-size: var(--fs-xl);
+  }
 }
 
 .c-text--titleContents {
@@ -17,6 +27,10 @@
   color: #7e7676;
   font-size: var(--fs-xs);
   line-height: 1.5;
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--number {
@@ -30,11 +44,21 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+
+  @include pc {
+    font-size: var(--fs-lg);
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .c-text--plan {
   font-size: var(--fs-md);
   font-weight: 500;
+
+  @include pc {
+    font-size: var(--fs-lg);
+  }
 }
 
 .c-text--planSection {
@@ -42,34 +66,53 @@
   font-weight: 700;
   padding-bottom: 5px;
   font-size: var(--fs-sm);
+  
+  @include pc{
+    font-size: var(--fs-lg);
+  }
 }
 
 .c-text--planText {
   text-align: center;
   color: #7e7676;
   font-size: var(--fs-xs);
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--planText.-frequency {
   height: 34px;
-  text-align: start;
 }
 
 .c-text--price {
   font-size: var(--fs-lg);
   color: #443a32;
   font-weight: 900;
+
+  @include pc {
+    font-size: var(--fs-xl);
+  }
 }
 
 .c-text--course,
 .c-text--taxIn {
   color: #7e7676;
   font-size: var(--fs-xs);
+
+  @include pc{
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--detailContents {
   color: #7e7676;
   font-size: var(--fs-sm);
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--check {
@@ -89,11 +132,28 @@
   border-radius: 15px;
   font-size: var(--fs-xs);
   text-align: center;
+
+  @include pc{
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--recommendedFrequency {
   font-size: var(--fs-sm);
   text-align: center;
+
+  @include pc{
+    font-size: var(--fs-md);
+  }
+}
+
+.c-text--optionMenu,
+.c-text--optionPrice {
+  font-size: var(--fs-sm);
+
+  @include pc{
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--optionPrice {
@@ -105,16 +165,22 @@
   color: #e4abb2;
   font-weight: 500;
   padding-bottom: 10px;
+  font-size: var(--fs-sm);
 }
 
 .c-text--resultJp {
   color: #fff;
   font-weight: 700;
+  font-size: var(--fs-md);
 }
 
 .c-text--resultLabel {
   color: #7e7676;
   font-weight: 500;
+
+  @include pc{
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--resultPlan,
@@ -123,10 +189,14 @@
 .c-text--resultOption {
   color: #7e7676;
   font-weight: 600;
+
+  @include pc{
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--resultPrice,
-.c-test--resultFrequency {
+.c-text--resultFrequency {
   color: #db5e6f;
 }
 
@@ -153,11 +223,19 @@
   font-size: var(--fs-md);
   font-weight: 500;
   padding-bottom: 5px;
+
+  @include pc {
+    font-size: var(--fs-lg);
+  }
 }
 
 .c-text--faqTitleContents {
   font-size: var(--fs-xs);
   color: #7e7676;
+
+  @include pc {
+    font-size: var(--fs-sm);
+  }
 }
 
 .c-text--faq {
@@ -169,10 +247,19 @@
 .c-text--footerContents {
   font-size: 13px;
   padding-top: 10px;
+
+  @include pc {
+    font-size: 25px;
+  }
 }
 
 .c-text--footer {
   padding: 15px 0 0;
   color: #afa9ac;
   font-size: var(--fs-xs);
+
+  @include pc {
+    font-size: var(--fs-md);
+    padding: 30px 0 0;
+  }
 }

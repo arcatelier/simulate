@@ -1,3 +1,5 @@
+@use '../../foundation/mixin' as *;
+
 .p-faqWrap {
   background-color: #eecfda;
   padding: 25px 15px;
@@ -5,11 +7,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include pc {
+    padding: 40px 50px;
+  }
 }
 
 .p-faqMainTitle {
   color: #7e7676;
   padding-bottom: 10px;
+
+  @include pc {
+    font-size: var(--fs-xl);
+  }
 }
 
 .p-faq {
@@ -22,6 +32,10 @@
   gap: 15px;
   justify-content: center;
   align-items: center;
+  
+  @include pc {
+    gap: 40px;
+  }
 }
 
 .p-faqTab__button {
@@ -30,8 +44,13 @@
   font-weight: 700;
   padding: 10px 15px;
   border-radius: 15px;
-  font-size: clamp(10px, 3.5vw, 15px);
+  font-size: var(--fs-xs);
   border: 1px solid #cec6c6;
+
+  @include pc {
+    font-size: var(--fs-md);
+    padding: 20px 30px;
+  }
 }
 
 .p-faqTab__button.is-selected {
@@ -49,6 +68,10 @@
   border-bottom: 1px solid #e9bcc2;
   padding: 15px 0;
 
+  @include pc {
+    padding: 30px 0;
+  }
+
   &:first-child{
     border-top: 1px solid #e9bcc2;
   }
@@ -59,7 +82,15 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-size: 15px;
+}
+
+.p-faqQuestion,
+.p-faqAnswer {
+  font-size: var(--fs-xs);
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .p-faqQuestion__text {

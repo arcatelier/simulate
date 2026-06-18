@@ -1,3 +1,5 @@
+@use '../../foundation/mixin' as *;
+
 .p-optionBox {
   display: flex;
   align-items: center;
@@ -6,6 +8,10 @@
   border-radius: 15px;
   padding: 15px;
   margin-bottom: 15px;
+
+  @include pc {
+    margin-bottom: 30px;
+  }
 
   &:last-child {
     margin-bottom: 0;

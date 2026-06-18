@@ -1,7 +1,13 @@
+@use '../../foundation/mixin' as *;
+
 .p-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 15px;
+  padding: 10px 15px;
+
+  @include pc {
+    padding: 30px 25px;
+  }
 }

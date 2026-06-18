@@ -1,20 +1,36 @@
 @use '../../foundation/mixin' as *;
 
 .c-btn--header {
-  font-size: clamp(10px, 3vw, 20px);
+  font-size: var(--fs-xs);
   font-weight: 500;
   color: white;
   background-color: #db5e6f;
   padding: 5px 13px;
   border-radius: 15px;
   cursor: pointer;
+
+  @include pc {
+    font-size: var(--fs-lg);
+  }
 }
 
 .c-btn--close {
   font-size: 20px;
+  width: 30px;
+  height: 30px;
   color: gray;
   border-radius: 5px;
   border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  @include pc {
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .c-btn--contact {
@@ -23,14 +39,23 @@
   color: #fff;
   font-weight: 700;
   background-color: #db5e6f;
-  font-size: clamp(15px, 5vw, 20px);
+  font-size: var(--fs-sm);
   padding: 10px 0;
   border-radius: 15px;
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-btn--footer {
   color: #949090;
   padding: 10px 0;
+  font-size: var(--fs-xs);
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-btn--applyButton {
@@ -38,6 +63,11 @@
   padding: 20px;
   font-size: 17px;
   font-weight: 700;
+
+  @include pc {
+    padding: 40px;
+    font-size: 30px;
+  }
 }
 
 .c-btn--answer {
@@ -52,4 +82,10 @@
   border-radius: 50%;
   color: #e9bcc2;
   border: 1px solid #e9bcc2;
+
+  @include pc {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
 }

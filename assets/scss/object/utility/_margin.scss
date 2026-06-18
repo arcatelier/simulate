@@ -7,3 +7,9 @@
 .u-marginRight10 {
   margin-right: 10px;
 }
+
+.u-margin--20 {
+  @include pc {
+    margin: 0 20px;
+  }
+}

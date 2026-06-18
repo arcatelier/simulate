@@ -1,3 +1,4 @@
+@use '../../foundation/mixin' as *;
 
 .p-frequencyBox__wrap {
   display: flex;
@@ -5,6 +6,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+
+  @include pc {
+    gap: 30px;
+    margin: 20px;
+  }
 }
 
 .p-frequencyBox {
@@ -13,6 +19,10 @@
   border-radius: 15px;
   display: block;
   width: 100%;
+
+  @include pc{
+    padding: 20px;
+  }
 }
 
 .p-frequencyBox.is-selected {

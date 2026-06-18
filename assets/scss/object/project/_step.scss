@@ -1,10 +1,20 @@
+@use '../../foundation/mixin' as *;
+
 .p-stepWrap {
   margin: 48px 15px;
+
+  @include pc {
+    margin: 48px 50px;
+  }
 }
 
 .p-stepWrap__frequency {
   background-color: #eecfda;
   padding: 48px 15px;
+
+  @include pc{
+    padding: 48px 50px;
+  }
 }
 
 .p-step {

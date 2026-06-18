@@ -11,4 +11,8 @@
   width: 100%;
   z-index: 1000;
   background-color: #ebdae0;
+
+  @include pc {
+    padding: 20px 50px;
+  }
 }

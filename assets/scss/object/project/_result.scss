@@ -1,8 +1,14 @@
+@use '../../foundation/mixin' as *;
+
 .p-result__wrap {
   margin: 0 15px;
   background-color: #f5f3f7;
   border-radius: 15px;
   border: 1px solid #db5e6f;
+
+  @include pc{
+    margin: 0 50px;
+  }
 }
 
 .p-result__title {

@@ -5,6 +5,11 @@
   height: 2px;
   background-color: #8a7e73;
   border: none;
+
+  @include pc {
+    width: 40px;
+    height: 5px;
+  }
 }
 
 .c-line--footer {

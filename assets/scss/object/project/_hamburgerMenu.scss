@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+
+  @include pc {
+    gap: 5px;
+  }
 }
 
 .p-hamburgerMenu__header {
@@ -11,7 +15,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 15px;
+  padding: 15px;
+
+  @include pc {
+    padding: 25px;
+  }
 
   &::after {
     content: "";
@@ -38,10 +46,18 @@
   &.is-open {
     right: 0;
   }
+
+  @include pc {
+    max-width: 500px;
+  }
 }
 
 .p-hamburgerMenu__list {
   padding: 20px 15px 0;
+
+  @include pc {
+    padding: 20px 25px 0;
+  }
 
   &::after {
     content: "";
@@ -56,14 +72,22 @@
 
 .p-hamburgerMenu__item {
   padding: 10px 0;
-  font-size: clamp(13px, 4vw, 17px);
+  font-size: var(--fs-sm);
   font-weight: 500;
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .p-hamburgerMenu__footer {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
+
+  @include pc {
+    padding: 0 25px;
+  }
 }
 
 .p-hamburgerMenu__contactWrap {

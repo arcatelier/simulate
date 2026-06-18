@@ -1,5 +1,11 @@
+@use '../../foundation/mixin' as *;
+
 .p-footerMenu__wrap {
   padding: 64px 15px 32px;
+
+  @include pc {
+    padding: 64px 50px 32px;
+  }
 }
 
 .p-footerMenu__nav {
@@ -20,12 +26,20 @@
 .p-footerMenu__title {
   font-size: var(--fs-sm);
   display: flex;
+
+  @include pc {
+    font-size: var(--fs-lg);
+  }
 }
 
 .p-footerMenu__list {
   font-size: var(--fs-xs);
   display: flex;
   flex-direction: column;
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .p-footerMenu__item {

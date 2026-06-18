@@ -18,7 +18,7 @@ $sp: 767px;
 }
 
 // デスクトップ（1025px以上）
-@mixin sp {
+@mixin pc {
   @media screen and (min-width: $pc) {
   @content;
   }
