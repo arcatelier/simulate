@@ -66,7 +66,7 @@
   font-weight: 700;
   padding-bottom: 5px;
   font-size: var(--fs-sm);
-  
+
   @include pc{
     font-size: var(--fs-lg);
   }
@@ -78,12 +78,18 @@
   font-size: var(--fs-xs);
 
   @include pc {
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
   }
 }
 
 .c-text--planText.-frequency {
   height: 34px;
+  display: inline-block;
+  text-align: left;
+
+  @include pc {
+    white-space: nowrap;
+  }
 }
 
 .c-text--price {
@@ -184,8 +190,6 @@
 }
 
 .c-text--resultPlan,
-.c-text--resultPrice,
-.c-test--resultFrequency,
 .c-text--resultOption {
   color: #7e7676;
   font-weight: 600;
@@ -198,6 +202,11 @@
 .c-text--resultPrice,
 .c-text--resultFrequency {
   color: #db5e6f;
+  font-weight: 600;
+
+  @include pc{
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--total {

@@ -1,13 +1,13 @@
 @use '../../foundation/mixin' as *;
 
 .p-result__wrap {
-  margin: 0 15px;
+  margin: 0 30px;
   background-color: #f5f3f7;
   border-radius: 15px;
   border: 1px solid #db5e6f;
 
   @include pc{
-    margin: 0 50px;
+    margin: 0;
   }
 }
 

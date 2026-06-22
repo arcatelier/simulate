@@ -10,7 +10,7 @@
 
 :root {
   --fs-xs: clamp(10px, 3vw, 15px);
-  --fs-sm: clamp(15px, 3.5vw, 22px);
+  --fs-sm: clamp(15px, 3.5vw, 19px);
   --fs-md: clamp(20px, 5vw, 24px);
   --fs-lg: clamp(25px, 7vw, 28px);
   --fs-xl: clamp(30px, 8vw, 40px);
@@ -282,12 +282,19 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .c-text--planText {
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
   }
 }
 
 .c-text--planText.-frequency {
   height: 34px;
+  display: inline-block;
+  text-align: left;
+}
+@media screen and (min-width: 1025px) {
+  .c-text--planText.-frequency {
+    white-space: nowrap;
+  }
 }
 
 .c-text--price {
@@ -397,16 +404,12 @@ body {
 }
 
 .c-text--resultPlan,
-.c-text--resultPrice,
-.c-test--resultFrequency,
 .c-text--resultOption {
   color: #7e7676;
   font-weight: 600;
 }
 @media screen and (min-width: 1025px) {
   .c-text--resultPlan,
-  .c-text--resultPrice,
-  .c-test--resultFrequency,
   .c-text--resultOption {
     font-size: var(--fs-md);
   }
@@ -415,6 +418,13 @@ body {
 .c-text--resultPrice,
 .c-text--resultFrequency {
   color: #db5e6f;
+  font-weight: 600;
+}
+@media screen and (min-width: 1025px) {
+  .c-text--resultPrice,
+  .c-text--resultFrequency {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--total {
@@ -489,7 +499,7 @@ body {
 // Project
 // -----------------------------------------------------------------*/
 .p-applyWrap {
-  margin: 30px 15px 60px;
+  margin: 30px 30px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,7 +508,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .p-applyWrap {
-    margin: 50px 100px 60px;
+    margin: 50px 0 60px;
   }
 }
 .p-applyWrap:hover {
@@ -507,7 +517,7 @@ body {
 
 .p-faqWrap {
   background-color: #eecfda;
-  padding: 25px 15px;
+  padding: 25px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -515,7 +525,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .p-faqWrap {
-    padding: 40px 50px;
+    padding: 50px;
   }
 }
 
@@ -626,7 +636,7 @@ body {
 }
 
 .p-footerMenu__wrap {
-  padding: 64px 15px 32px;
+  padding: 64px 30px 32px;
 }
 @media screen and (min-width: 1025px) {
   .p-footerMenu__wrap {
@@ -634,11 +644,28 @@ body {
   }
 }
 
-.p-footerMenu__nav {
+.p-footerMenu__navSp {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1025px) {
+  .p-footerMenu__navSp {
+    display: none;
+  }
+}
+
+.p-footerMenu__navPc {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-footerMenu__navPc {
+    display: flex;
+    align-items: flex-start;
+    margin: 50px auto;
+    gap: 90px;
+  }
 }
 
 .p-footerMenu {
@@ -646,6 +673,14 @@ body {
 }
 .p-footerMenu:first-child {
   margin-top: 60px;
+}
+@media screen and (min-width: 1025px) {
+  .p-footerMenu {
+    margin: 0;
+  }
+  .p-footerMenu:first-child {
+    margin: 0;
+  }
 }
 
 .p-footerMenu__title {
@@ -691,12 +726,15 @@ body {
   padding: 10px;
   background-color: #fff;
   border-radius: 15px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 @media screen and (min-width: 1025px) {
   .p-frequencyBox {
-    padding: 20px;
+    padding: 30px 10px;
+    min-width: 160px;
   }
 }
 
@@ -948,14 +986,14 @@ body {
 }
 
 .p-result__wrap {
-  margin: 0 15px;
+  margin: 0 30px;
   background-color: #f5f3f7;
   border-radius: 15px;
   border: 1px solid #db5e6f;
 }
 @media screen and (min-width: 1025px) {
   .p-result__wrap {
-    margin: 0 50px;
+    margin: 0;
   }
 }
 
@@ -998,22 +1036,52 @@ body {
   padding: 15px;
 }
 
+@media screen and (min-width: 1025px) {
+  .p-simulation {
+    display: flex;
+    position: relative;
+    margin: 48px 50px;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .p-simulation__contents {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .p-simulation__result {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: sticky;
+    top: 72px;
+    align-self: flex-start;
+  }
+}
+
 .p-stepWrap {
-  margin: 48px 15px;
+  margin: 48px 30px;
 }
 @media screen and (min-width: 1025px) {
   .p-stepWrap {
-    margin: 48px 50px;
+    margin-bottom: 50px;
+  }
+  .p-stepWrap:first-child {
+    margin-top: 0;
   }
 }
 
 .p-stepWrap__frequency {
   background-color: #eecfda;
-  padding: 48px 15px;
+  padding: 48px 30px;
 }
 @media screen and (min-width: 1025px) {
   .p-stepWrap__frequency {
-    padding: 48px 50px;
+    padding: 48px 15px;
+    border-radius: 15px;
   }
 }
 

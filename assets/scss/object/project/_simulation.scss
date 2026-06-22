@@ -1,0 +1,27 @@
+@use '../../foundation/mixin' as *;
+
+.p-simulation {
+  @include pc {
+    display: flex;
+    position: relative;
+    margin: 48px 50px;
+    gap: 30px;
+  }
+}
+
+.p-simulation__contents {
+  @include pc {
+    width: 60%;
+  }
+}
+
+.p-simulation__result {
+  @include pc {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: sticky;
+    top: 72px;
+    align-self: flex-start;
+  }
+}

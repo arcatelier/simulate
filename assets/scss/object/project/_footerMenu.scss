@@ -1,18 +1,33 @@
 @use '../../foundation/mixin' as *;
 
 .p-footerMenu__wrap {
-  padding: 64px 15px 32px;
+  padding: 64px 30px 32px;
 
   @include pc {
     padding: 64px 50px 32px;
   }
 }
 
-.p-footerMenu__nav {
+.p-footerMenu__navSp {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 30px;
+
+  @include pc {
+    display: none;
+  }
+}
+
+.p-footerMenu__navPc {
+  display: none;
+
+  @include pc {
+    display: flex;
+    align-items: flex-start;
+    margin: 50px auto;
+    gap: 90px;
+  }
 }
 
 .p-footerMenu{
@@ -20,6 +35,14 @@
 
   &:first-child {
     margin-top: 60px;
+  }
+
+  @include pc {
+    margin: 0;
+
+    &:first-child {
+      margin: 0;
+    }
   }
 }
 

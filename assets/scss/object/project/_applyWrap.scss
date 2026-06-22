@@ -1,7 +1,7 @@
 @use '../../foundation/mixin' as *;
 
 .p-applyWrap {
-  margin: 30px 15px 60px;
+  margin: 30px 30px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   border-radius: 15px;
 
   @include pc {
-    margin: 50px 100px 60px;
+    margin: 50px 0 60px;
   }
 
   &:hover {
