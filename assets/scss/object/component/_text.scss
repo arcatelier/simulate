@@ -68,7 +68,8 @@
   font-size: var(--fs-sm);
 
   @include pc{
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
+    white-space: nowrap;
   }
 }
 
@@ -79,6 +80,9 @@
 
   @include pc {
     font-size: var(--fs-sm);
+    text-align: left;
+    max-height: 90px;
+    height: 100%;
   }
 }
 
@@ -140,7 +144,7 @@
   text-align: center;
 
   @include pc{
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
   }
 }
 

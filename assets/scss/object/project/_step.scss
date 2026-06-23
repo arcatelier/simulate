@@ -5,10 +5,22 @@
 
   @include pc {
     margin-bottom: 50px;
+    margin: 0;
 
     &:first-child {
       margin-top: 0;
     }
+
+    &:last-child {
+      margin: 50px 0;
+    }
+  }
+}
+
+.p-stepWrap__pc {
+  @include pc {
+    display: flex;
+    margin-bottom: 50px;
   }
 }
 

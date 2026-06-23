@@ -271,7 +271,8 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .c-text--planSection {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
+    white-space: nowrap;
   }
 }
 
@@ -283,6 +284,9 @@ body {
 @media screen and (min-width: 1025px) {
   .c-text--planText {
     font-size: var(--fs-sm);
+    text-align: left;
+    max-height: 90px;
+    height: 100%;
   }
 }
 
@@ -350,7 +354,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .c-text--recommended {
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
   }
 }
 
@@ -921,22 +925,28 @@ body {
   border-radius: 15px;
   display: block;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 1025px) {
-  .p-planBox {
-    margin: 0 20px 50px;
-  }
+  position: relative;
 }
 .p-planBox:last-child {
   margin-bottom: 0;
 }
+@media screen and (min-width: 1025px) {
+  .p-planBox {
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 30px 15px;
+  }
+  .p-planBox:last-child {
+    margin-right: 0;
+  }
+}
 
 .p-planBox--light {
-  margin-bottom: 22.5px;
+  margin-bottom: 37.5px;
 }
 @media screen and (min-width: 1025px) {
   .p-planBox--light {
-    margin-bottom: 42.5px;
+    margin-bottom: 0;
   }
 }
 
@@ -957,8 +967,17 @@ body {
 }
 
 .p-planBox__recommendedWrap {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   margin-bottom: -20px;
+}
+@media screen and (min-width: 1025px) {
+  .p-planBox__recommendedWrap {
+    top: -20px;
+  }
 }
 
 .p-plan__detail.-campaign {
@@ -1047,7 +1066,7 @@ body {
 
 @media screen and (min-width: 1025px) {
   .p-simulation__contents {
-    width: 60%;
+    width: 65%;
   }
 }
 
@@ -1055,7 +1074,7 @@ body {
   .p-simulation__result {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
     position: sticky;
     top: 72px;
     align-self: flex-start;
@@ -1068,9 +1087,20 @@ body {
 @media screen and (min-width: 1025px) {
   .p-stepWrap {
     margin-bottom: 50px;
+    margin: 0;
   }
   .p-stepWrap:first-child {
     margin-top: 0;
+  }
+  .p-stepWrap:last-child {
+    margin: 50px 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .p-stepWrap__pc {
+    display: flex;
+    margin-bottom: 50px;
   }
 }
 

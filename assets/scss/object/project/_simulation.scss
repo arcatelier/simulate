@@ -11,7 +11,7 @@
 
 .p-simulation__contents {
   @include pc {
-    width: 60%;
+    width: 65%;
   }
 }
 
@@ -19,7 +19,7 @@
   @include pc {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
     position: sticky;
     top: 72px;
     align-self: flex-start;
