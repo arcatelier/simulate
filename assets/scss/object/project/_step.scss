@@ -3,22 +3,21 @@
 .p-stepWrap {
   margin: 48px 30px;
 
-  @include pc {
-    margin-bottom: 50px;
-    margin: 0;
+  @include tab {
+    margin: 0 0 50px 30px;
 
     &:first-child {
       margin-top: 0;
     }
 
     &:last-child {
-      margin: 50px 0;
+      margin: 50px 0 0 30px;
     }
   }
 }
 
-.p-stepWrap__pc {
-  @include pc {
+.p-stepWrap__tab {
+  @include tab {
     display: flex;
     margin-bottom: 50px;
   }
@@ -28,9 +27,10 @@
   background-color: #eecfda;
   padding: 48px 30px;
 
-  @include pc{
+  @include tab {
     padding: 48px 15px;
     border-radius: 15px;
+    margin-left: 15px;
   }
 }
 

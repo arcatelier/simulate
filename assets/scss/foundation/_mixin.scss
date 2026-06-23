@@ -12,8 +12,8 @@ $sp: 767px;
 
 // タブレット（768px〜1024px）
 @mixin tab {
-  @media screen and (min-width: $tab) and (max-width: 1024px) {
-  @content;
+  @media screen and (min-width: 768px) {
+    @content;
   }
 }
 

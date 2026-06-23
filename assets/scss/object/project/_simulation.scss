@@ -1,27 +1,32 @@
 @use '../../foundation/mixin' as *;
 
 .p-simulation {
-  @include pc {
+  @include tab {
     display: flex;
     position: relative;
+    margin: 48px 0;
+    gap: 15px;
+  }
+
+  @include pc {
     margin: 48px 50px;
-    gap: 30px;
   }
 }
 
 .p-simulation__contents {
-  @include pc {
+  @include tab {
     width: 65%;
   }
 }
 
 .p-simulation__result {
-  @include pc {
+  @include tab {
     display: flex;
     flex-direction: column;
     width: 35%;
     position: sticky;
     top: 72px;
     align-self: flex-start;
+    margin: 0 20px 0 0;
   }
 }

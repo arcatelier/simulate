@@ -6,7 +6,7 @@
   background-color: #8a7e73;
   border: none;
 
-  @include pc {
+  @include tab {
     width: 40px;
     height: 5px;
   }

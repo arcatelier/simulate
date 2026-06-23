@@ -8,8 +8,12 @@
   background-color: #db5e6f;
   border-radius: 15px;
 
+  @include tab {
+    margin: 20px 0 0;
+  }
+
   @include pc {
-    margin: 50px 0 60px;
+    margin: 50px 0 0;
   }
 
   &:hover {

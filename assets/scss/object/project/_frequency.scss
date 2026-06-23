@@ -7,8 +7,8 @@
   align-items: center;
   margin-bottom: 20px;
 
-  @include pc {
-    gap: 30px;
+  @include tab {
+    gap: 15px;
     margin: 20px;
   }
 }
@@ -22,9 +22,9 @@
   align-items: center;
   width: 100%;
 
-  @include pc{
-    padding: 30px 10px;
-    min-width: 160px;
+  @include tab {
+    padding: 20px 10px;
+    min-width: 100px;
   }
 }
 

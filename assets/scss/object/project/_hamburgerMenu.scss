@@ -5,7 +5,7 @@
   flex-direction: column;
   cursor: pointer;
 
-  @include pc {
+  @include tab {
     gap: 5px;
   }
 }
@@ -17,7 +17,7 @@
   align-items: center;
   padding: 15px;
 
-  @include pc {
+  @include tab {
     padding: 25px;
   }
 
@@ -47,7 +47,7 @@
     right: 0;
   }
 
-  @include pc {
+  @include tab {
     max-width: 500px;
   }
 }
@@ -55,7 +55,7 @@
 .p-hamburgerMenu__list {
   padding: 20px 15px 0;
 
-  @include pc {
+  @include tab {
     padding: 20px 25px 0;
   }
 
@@ -75,7 +75,7 @@
   font-size: var(--fs-sm);
   font-weight: 500;
 
-  @include pc {
+  @include tab {
     font-size: var(--fs-md);
   }
 }
@@ -85,7 +85,7 @@
   display: flex;
   flex-direction: column;
 
-  @include pc {
+  @include tab {
     padding: 0 25px;
   }
 }

@@ -6,7 +6,7 @@
   border-radius: 15px;
   border: 1px solid #db5e6f;
 
-  @include pc{
+  @include tab {
     margin: 0;
   }
 }
@@ -19,6 +19,10 @@
   align-items: center;
   border-radius: 15px 15px 0 0;
   padding: 20px 0;
+
+  @include tab {
+    padding: 20px 15px;
+  }
 }
 
 .p-result {

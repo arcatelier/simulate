@@ -9,10 +9,6 @@
   padding: 15px;
   margin-bottom: 15px;
 
-  @include pc {
-    margin-bottom: 30px;
-  }
-
   &:last-child {
     margin-bottom: 0;
   }

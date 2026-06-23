@@ -12,7 +12,7 @@
   z-index: 1000;
   background-color: #ebdae0;
 
-  @include pc {
+  @include tab  {
     padding: 20px 50px;
   }
 }

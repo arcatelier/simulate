@@ -7,7 +7,7 @@
   align-items: center;
   padding: 10px 15px;
 
-  @include pc {
+  @include tab {
     padding: 30px 25px;
   }
 }

@@ -1,0 +1,9 @@
+@use '../../foundation/mixin' as *;
+
+.u-tabOnly {
+  display: none;
+
+  @include tab {
+    display: inline;
+  }
+}

@@ -9,8 +9,8 @@
   border-radius: 15px;
   cursor: pointer;
 
-  @include pc {
-    font-size: var(--fs-lg);
+  @include tab {
+    font-size: var(--fs-md);
   }
 }
 
@@ -64,9 +64,9 @@
   font-size: 17px;
   font-weight: 700;
 
-  @include pc {
-    padding: 40px;
-    font-size: 30px;
+  @include tab {
+    padding: 15px;
+    font-size: var(--fs-sm);
   }
 }
 
@@ -83,7 +83,7 @@
   color: #e9bcc2;
   border: 1px solid #e9bcc2;
 
-  @include pc {
+  @include tab {
     width: 50px;
     height: 50px;
     font-size: 30px;
