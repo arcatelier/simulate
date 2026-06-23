@@ -44,6 +44,12 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+
+  @include pc {
+    width: 60px;
+    height: 60px;
+    font-size: var(--fs-lg);
+  }
 }
 
 .c-text--plan {
@@ -65,7 +71,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 70px;
   }
+
+  @include pc {
+    font-size: var(--fs-md);
+    padding: 10px 0;
+    height: 90px;
+  }
+}
+
+.c-text--planSection.-frequency {
+  height: auto;
+  padding: 0;
 }
 
 .c-text--planText {
@@ -97,6 +115,10 @@
   font-size: var(--fs-lg);
   color: #443a32;
   font-weight: 900;
+
+  @include pc {
+    font-size: var(--fs-xl);
+  }
 }
 
 .c-text--course {
@@ -106,17 +128,29 @@
   @include tab {
     font-size: var(--fs-sm);
   }
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--taxIn {
   color: #7e7676;
   font-size: var(--fs-sm);
   white-space: nowrap;
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--detailContents {
   color: #7e7676;
   font-size: var(--fs-sm);
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--check {
@@ -179,6 +213,10 @@
   @include tab {
     text-align: center;
   }
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--resultJp {
@@ -189,6 +227,10 @@
   @include tab {
     text-align: center;
   }
+
+  @include pc {
+    font-size: var(--fs-lg);
+  }
 }
 
 .c-text--resultLabel {
@@ -197,6 +239,10 @@
 
   @include tab {
     font-size: var(--fs-sm);
+  }
+
+  @include pc {
+    font-size: var(--fs-md);
   }
 }
 
@@ -208,15 +254,24 @@
   @include tab {
     font-size: var(--fs-xs);
   }
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--resultPrice,
 .c-text--resultFrequency {
   color: #db5e6f;
   font-weight: 600;
+  text-align: end;
 
   @include tab {
     font-size: var(--fs-sm);
+  }
+
+  @include pc {
+    font-size: var(--fs-md);
   }
 }
 
@@ -224,11 +279,19 @@
   color: #db5e6f;
   font-weight: 700;
   padding-bottom: 7px;
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--totalPayment {
   font-size: 16px;
   font-weight: 700;
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--totalPrice {
@@ -239,6 +302,16 @@
 
   @include tab {
     font-size: var(--fs-lg);
+  }
+
+  @include pc {
+    font-size: var(--fs-xl);
+  }
+}
+
+.c-text--totalTax {
+  @include pc {
+    font-size: var(--fs-md);
   }
 }
 
@@ -274,6 +347,10 @@
 
   @include tab {
     font-size: var(--fs-sm);
+  }
+
+  @include pc {
+    font-size: var(--fs-md);
   }
 }
 

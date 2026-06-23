@@ -6,4 +6,16 @@
   @include tab {
     display: inline;
   }
+
+  @include pc {
+    display: none;
+  }
+}
+
+.u-tabOnly__plan {
+  display: none;
+
+  @include tab {
+    display: inline;
+  }
 }

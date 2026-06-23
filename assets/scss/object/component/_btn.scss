@@ -68,6 +68,10 @@
     padding: 15px;
     font-size: var(--fs-sm);
   }
+
+  @include pc {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-btn--answer {

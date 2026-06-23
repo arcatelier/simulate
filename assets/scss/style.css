@@ -142,6 +142,11 @@ body {
     font-size: var(--fs-sm);
   }
 }
+@media screen and (min-width: 1025px) {
+  .c-btn--applyButton {
+    font-size: var(--fs-md);
+  }
+}
 
 .c-btn--answer {
   display: flex;
@@ -245,6 +250,13 @@ body {
   width: 40px;
   height: 40px;
 }
+@media screen and (min-width: 1025px) {
+  .c-text--number {
+    width: 60px;
+    height: 60px;
+    font-size: var(--fs-lg);
+  }
+}
 
 .c-text--plan {
   font-size: var(--fs-md);
@@ -267,7 +279,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 70px;
   }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--planSection {
+    font-size: var(--fs-md);
+    padding: 10px 0;
+    height: 90px;
+  }
+}
+
+.c-text--planSection.-frequency {
+  height: auto;
+  padding: 0;
 }
 
 .c-text--planText {
@@ -302,6 +327,11 @@ body {
   color: #443a32;
   font-weight: 900;
 }
+@media screen and (min-width: 1025px) {
+  .c-text--price {
+    font-size: var(--fs-xl);
+  }
+}
 
 .c-text--course {
   color: #7e7676;
@@ -312,16 +342,31 @@ body {
     font-size: var(--fs-sm);
   }
 }
+@media screen and (min-width: 1025px) {
+  .c-text--course {
+    font-size: var(--fs-md);
+  }
+}
 
 .c-text--taxIn {
   color: #7e7676;
   font-size: var(--fs-sm);
   white-space: nowrap;
 }
+@media screen and (min-width: 1025px) {
+  .c-text--taxIn {
+    font-size: var(--fs-md);
+  }
+}
 
 .c-text--detailContents {
   color: #7e7676;
   font-size: var(--fs-sm);
+}
+@media screen and (min-width: 1025px) {
+  .c-text--detailContents {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--check {
@@ -391,6 +436,11 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 1025px) {
+  .c-text--result {
+    font-size: var(--fs-md);
+  }
+}
 
 .c-text--resultJp {
   color: #fff;
@@ -402,6 +452,11 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 1025px) {
+  .c-text--resultJp {
+    font-size: var(--fs-lg);
+  }
+}
 
 .c-text--resultLabel {
   color: #7e7676;
@@ -410,6 +465,11 @@ body {
 @media screen and (min-width: 768px) {
   .c-text--resultLabel {
     font-size: var(--fs-sm);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--resultLabel {
+    font-size: var(--fs-md);
   }
 }
 
@@ -424,16 +484,29 @@ body {
     font-size: var(--fs-xs);
   }
 }
+@media screen and (min-width: 1025px) {
+  .c-text--resultPlan,
+  .c-text--resultOption {
+    font-size: var(--fs-md);
+  }
+}
 
 .c-text--resultPrice,
 .c-text--resultFrequency {
   color: #db5e6f;
   font-weight: 600;
+  text-align: end;
 }
 @media screen and (min-width: 768px) {
   .c-text--resultPrice,
   .c-text--resultFrequency {
     font-size: var(--fs-sm);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--resultPrice,
+  .c-text--resultFrequency {
+    font-size: var(--fs-md);
   }
 }
 
@@ -442,10 +515,20 @@ body {
   font-weight: 700;
   padding-bottom: 7px;
 }
+@media screen and (min-width: 1025px) {
+  .c-text--total {
+    font-size: var(--fs-md);
+  }
+}
 
 .c-text--totalPayment {
   font-size: 16px;
   font-weight: 700;
+}
+@media screen and (min-width: 1025px) {
+  .c-text--totalPayment {
+    font-size: var(--fs-md);
+  }
 }
 
 .c-text--totalPrice {
@@ -457,6 +540,17 @@ body {
 @media screen and (min-width: 768px) {
   .c-text--totalPrice {
     font-size: var(--fs-lg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--totalPrice {
+    font-size: var(--fs-xl);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .c-text--totalTax {
+    font-size: var(--fs-md);
   }
 }
 
@@ -495,6 +589,11 @@ body {
 @media screen and (min-width: 768px) {
   .c-text--footerContents {
     font-size: var(--fs-sm);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--footerContents {
+    font-size: var(--fs-md);
   }
 }
 
@@ -1084,6 +1183,7 @@ body {
 @media screen and (min-width: 1025px) {
   .p-simulation {
     margin: 48px 50px;
+    gap: 30px;
   }
 }
 
@@ -1166,6 +1266,20 @@ body {
 }
 @media screen and (min-width: 768px) {
   .u-tabOnly {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .u-tabOnly {
+    display: none;
+  }
+}
+
+.u-tabOnly__plan {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-tabOnly__plan {
     display: inline;
   }
 }
