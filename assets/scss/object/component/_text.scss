@@ -14,22 +14,22 @@
 
 .c-text--mainTitle {
   text-align: center;
-  font-size: var(--fs-lg);
+  font-size: 20px;
   padding: 15px 0;
 
   @include tab {
-    font-size: var(--fs-xl);
+    font-size: 35px;
   }
 }
 
 .c-text--titleContents {
   text-align: center;
   color: #7e7676;
-  font-size: var(--fs-xs);
+  font-size: 12px;
   line-height: 1.5;
 
   @include tab {
-    font-size: var(--fs-md);
+    font-size: 20px;
   }
 }
 
@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: var(--fs-md);
+  font-size: 20px;
   background-color: #db5e6f;
   border-radius: 50%;
   width: 40px;
@@ -48,16 +48,20 @@
   @include pc {
     width: 60px;
     height: 60px;
-    font-size: var(--fs-lg);
+    font-size: 30px;
   }
 }
 
 .c-text--plan {
-  font-size: var(--fs-md);
+  font-size: 20px;
   font-weight: 500;
 
+  @include tab {
+    font-size: 25px;
+  }
+
   @include pc {
-    font-size: var(--fs-lg);
+    font-size: 35px;
   }
 }
 
@@ -65,17 +69,18 @@
   text-align: center;
   font-weight: 700;
   padding-bottom: 5px;
-  font-size: var(--fs-sm);
+  font-size: 20px;
 
   @include tab {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70px;
+    font-size: 18px;
   }
 
   @include pc {
-    font-size: var(--fs-md);
+    font-size: 20px;
     padding: 10px 0;
     height: 90px;
   }
@@ -89,13 +94,13 @@
 .c-text--planText {
   text-align: center;
   color: #7e7676;
-  font-size: var(--fs-xs);
+  font-size: 12px;
 
   @include tab {
     text-align: left;
-    max-height: 90px;
+    max-height: 70px;
     height: 100%;
-    font-size: var(--fs-sm);
+    font-size: 15px;
   }
 }
 
@@ -112,25 +117,25 @@
 }
 
 .c-text--price {
-  font-size: var(--fs-lg);
+  font-size: 20px;
   color: #443a32;
   font-weight: 900;
 
   @include pc {
-    font-size: var(--fs-xl);
+    font-size: 30px;
   }
 }
 
 .c-text--course {
   color: #7e7676;
-  font-size: var(--fs-xs);
+  font-size: 15px;
 
   @include tab {
-    font-size: var(--fs-sm);
+    font-size: 17px;
   }
 
   @include pc {
-    font-size: var(--fs-md);
+    font-size: 20px;
   }
 }
 
@@ -146,11 +151,7 @@
 
 .c-text--detailContents {
   color: #7e7676;
-  font-size: var(--fs-sm);
-
-  @include pc {
-    font-size: var(--fs-md);
-  }
+  font-size: 15px;
 }
 
 .c-text--check {
@@ -168,7 +169,7 @@
   background-color: #db5e6f;
   padding: 5px 15px;
   border-radius: 15px;
-  font-size: var(--fs-xs);
+  font-size: 15px;
   text-align: center;
   white-space: nowrap;
 
@@ -177,7 +178,7 @@
   }
 
   @include pc {
-    font-size: var(--fs-sm);
+    font-size: 20px;
   }
 }
 

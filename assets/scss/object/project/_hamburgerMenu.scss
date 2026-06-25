@@ -4,9 +4,16 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  padding: 10px;
 
   @include tab {
     gap: 5px;
+  }
+
+  &:hover {
+    background-color: rgba(138, 126, 115, 0.25);
+    opacity: 0.7;
+    border-radius: 10px;
   }
 }
 
@@ -15,10 +22,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  margin: 15px;
 
   @include tab {
-    padding: 25px;
+    margin: 25px;
   }
 
   &::after {
@@ -53,10 +60,10 @@
 }
 
 .p-hamburgerMenu__list {
-  padding: 20px 15px 0;
+  margin: 20px 15px 0;
 
   @include tab {
-    padding: 20px 25px 0;
+    margin: 20px 25px 0;
   }
 
   &::after {
@@ -81,12 +88,12 @@
 }
 
 .p-hamburgerMenu__footer {
-  padding: 0 15px;
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
 
   @include tab {
-    padding: 0 25px;
+    margin: 0 25px;
   }
 }
 

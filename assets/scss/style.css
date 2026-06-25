@@ -8,14 +8,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --fs-xs: clamp(10px, 1.3vw, 15px);
-  --fs-sm: clamp(15px, 1.5vw, 19px);
-  --fs-md: clamp(20px, 2vw, 24px);
-  --fs-lg: clamp(25px, 2.5vw, 28px);
-  --fs-xl: clamp(30px, 3vw, 40px);
-}
-
 body {
   background-color: #f0e8eb;
   padding-top: 56px;
@@ -54,7 +46,12 @@ body {
 }
 
 .l-main {
-  margin: 48px 0 80px;
+  margin: 40px 0 80px;
+}
+@media screen and (min-width: 768px) {
+  .l-main {
+    margin: 70px 0 80px;
+  }
 }
 
 .l-footer {
@@ -69,7 +66,7 @@ body {
 // Component
 // -----------------------------------------------------------------*/
 .c-btn--header {
-  font-size: var(--fs-xs);
+  font-size: 12px;
   font-weight: 500;
   color: white;
   background-color: #db5e6f;
@@ -79,7 +76,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .c-btn--header {
-    font-size: var(--fs-md);
+    font-size: 25px;
   }
 }
 
@@ -217,24 +214,24 @@ body {
 
 .c-text--mainTitle {
   text-align: center;
-  font-size: var(--fs-lg);
+  font-size: 20px;
   padding: 15px 0;
 }
 @media screen and (min-width: 768px) {
   .c-text--mainTitle {
-    font-size: var(--fs-xl);
+    font-size: 35px;
   }
 }
 
 .c-text--titleContents {
   text-align: center;
   color: #7e7676;
-  font-size: var(--fs-xs);
+  font-size: 12px;
   line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .c-text--titleContents {
-    font-size: var(--fs-md);
+    font-size: 20px;
   }
 }
 
@@ -244,7 +241,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: var(--fs-md);
+  font-size: 20px;
   background-color: #db5e6f;
   border-radius: 50%;
   width: 40px;
@@ -254,17 +251,22 @@ body {
   .c-text--number {
     width: 60px;
     height: 60px;
-    font-size: var(--fs-lg);
+    font-size: 30px;
   }
 }
 
 .c-text--plan {
-  font-size: var(--fs-md);
+  font-size: 20px;
   font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .c-text--plan {
+    font-size: 25px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .c-text--plan {
-    font-size: var(--fs-lg);
+    font-size: 35px;
   }
 }
 
@@ -272,7 +274,7 @@ body {
   text-align: center;
   font-weight: 700;
   padding-bottom: 5px;
-  font-size: var(--fs-sm);
+  font-size: 20px;
 }
 @media screen and (min-width: 768px) {
   .c-text--planSection {
@@ -280,11 +282,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 70px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1025px) {
   .c-text--planSection {
-    font-size: var(--fs-md);
+    font-size: 20px;
     padding: 10px 0;
     height: 90px;
   }
@@ -298,14 +301,14 @@ body {
 .c-text--planText {
   text-align: center;
   color: #7e7676;
-  font-size: var(--fs-xs);
+  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
   .c-text--planText {
     text-align: left;
-    max-height: 90px;
+    max-height: 70px;
     height: 100%;
-    font-size: var(--fs-sm);
+    font-size: 15px;
   }
 }
 
@@ -323,28 +326,28 @@ body {
 }
 
 .c-text--price {
-  font-size: var(--fs-lg);
+  font-size: 20px;
   color: #443a32;
   font-weight: 900;
 }
 @media screen and (min-width: 1025px) {
   .c-text--price {
-    font-size: var(--fs-xl);
+    font-size: 30px;
   }
 }
 
 .c-text--course {
   color: #7e7676;
-  font-size: var(--fs-xs);
+  font-size: 15px;
 }
 @media screen and (min-width: 768px) {
   .c-text--course {
-    font-size: var(--fs-sm);
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 1025px) {
   .c-text--course {
-    font-size: var(--fs-md);
+    font-size: 20px;
   }
 }
 
@@ -361,12 +364,7 @@ body {
 
 .c-text--detailContents {
   color: #7e7676;
-  font-size: var(--fs-sm);
-}
-@media screen and (min-width: 1025px) {
-  .c-text--detailContents {
-    font-size: var(--fs-md);
-  }
+  font-size: 15px;
 }
 
 .c-text--check {
@@ -384,7 +382,7 @@ body {
   background-color: #db5e6f;
   padding: 5px 15px;
   border-radius: 15px;
-  font-size: var(--fs-xs);
+  font-size: 15px;
   text-align: center;
   white-space: nowrap;
 }
@@ -395,7 +393,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .c-text--recommended {
-    font-size: var(--fs-sm);
+    font-size: 20px;
   }
 }
 
@@ -869,18 +867,29 @@ body {
 .p-headerMenu {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .p-headerMenu {
+    gap: 12px;
+  }
 }
 
 .p-hamburgerMenu {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  padding: 10px;
 }
 @media screen and (min-width: 768px) {
   .p-hamburgerMenu {
     gap: 5px;
   }
+}
+.p-hamburgerMenu:hover {
+  background-color: rgba(138, 126, 115, 0.25);
+  opacity: 0.7;
+  border-radius: 10px;
 }
 
 .p-hamburgerMenu__header {
@@ -888,11 +897,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  margin: 15px;
 }
 @media screen and (min-width: 768px) {
   .p-hamburgerMenu__header {
-    padding: 25px;
+    margin: 25px;
   }
 }
 .p-hamburgerMenu__header::after {
@@ -926,11 +935,11 @@ body {
 }
 
 .p-hamburgerMenu__list {
-  padding: 20px 15px 0;
+  margin: 20px 15px 0;
 }
 @media screen and (min-width: 768px) {
   .p-hamburgerMenu__list {
-    padding: 20px 25px 0;
+    margin: 20px 25px 0;
   }
 }
 .p-hamburgerMenu__list::after {
@@ -955,13 +964,13 @@ body {
 }
 
 .p-hamburgerMenu__footer {
-  padding: 0 15px;
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .p-hamburgerMenu__footer {
-    padding: 0 25px;
+    margin: 0 25px;
   }
 }
 
@@ -1250,11 +1259,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px;
+  margin: 0 10px 10px;
 }
 @media screen and (min-width: 768px) {
   .p-title {
-    padding: 30px 25px;
+    margin: 0 40px 40px;
   }
 }
 

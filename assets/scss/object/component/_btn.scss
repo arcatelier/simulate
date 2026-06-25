@@ -1,7 +1,7 @@
 @use '../../foundation/mixin' as *;
 
 .c-btn--header {
-  font-size: var(--fs-xs);
+  font-size: 12px;
   font-weight: 500;
   color: white;
   background-color: #db5e6f;
@@ -10,7 +10,7 @@
   cursor: pointer;
 
   @include tab {
-    font-size: var(--fs-md);
+    font-size: 25px;
   }
 }
 

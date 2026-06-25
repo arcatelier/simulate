@@ -3,5 +3,9 @@
 .p-headerMenu {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
+
+  @include tab {
+    gap: 12px;
+  }
 }
