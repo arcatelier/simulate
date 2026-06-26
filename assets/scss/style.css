@@ -37,11 +37,11 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #ebdae0;
+  background-color: #f0e8eb;
 }
 @media screen and (min-width: 768px) {
   .l-header {
-    padding: 20px 50px;
+    padding: 15px 30px;
   }
 }
 
@@ -71,17 +71,18 @@ body {
   color: white;
   background-color: #db5e6f;
   padding: 5px 13px;
-  border-radius: 15px;
+  border-radius: 25px;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .c-btn--header {
-    font-size: 25px;
+    font-size: 18px;
+    padding: 10px 24px;
   }
 }
 
 .c-btn--close {
-  font-size: 20px;
+  font-size: 25px;
   width: 30px;
   height: 30px;
   color: gray;
@@ -91,6 +92,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .c-btn--close {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .c-btn--close {
@@ -106,9 +114,9 @@ body {
   color: #fff;
   font-weight: 700;
   background-color: #db5e6f;
-  font-size: var(--fs-sm);
-  padding: 10px 0;
-  border-radius: 15px;
+  font-size: 17px;
+  padding: 14px 24px;
+  border-radius: 25px;
 }
 @media screen and (min-width: 1025px) {
   .c-btn--contact {
@@ -119,7 +127,7 @@ body {
 .c-btn--footer {
   color: #949090;
   padding: 10px 0;
-  font-size: var(--fs-xs);
+  font-size: 17px;
 }
 @media screen and (min-width: 1025px) {
   .c-btn--footer {
@@ -190,8 +198,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .c-line {
-    width: 40px;
-    height: 5px;
+    width: 30px;
+    height: 3px;
   }
 }
 
@@ -202,13 +210,12 @@ body {
 .c-text--title {
   text-align: center;
   font-weight: 700;
-  font-size: 14px;
   letter-spacing: 0.12em;
   color: #db5e6f;
 }
 @media screen and (min-width: 768px) {
   .c-text--title {
-    font-size: 25px;
+    font-size: 16px;
   }
 }
 
@@ -219,7 +226,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .c-text--mainTitle {
-    font-size: 35px;
+    font-size: 22px;
   }
 }
 
@@ -231,7 +238,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .c-text--titleContents {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -256,12 +263,12 @@ body {
 }
 
 .c-text--plan {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .c-text--plan {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -297,18 +304,30 @@ body {
   height: auto;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .c-text--planSection.-frequency {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--planSection.-frequency {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}
 
 .c-text--planText {
   text-align: center;
   color: #7e7676;
   font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .c-text--planText {
     text-align: left;
-    max-height: 70px;
+    max-height: 85px;
     height: 100%;
-    font-size: 15px;
   }
 }
 
@@ -320,8 +339,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .c-text--planText.-frequency {
-    font-size: var(--fs-sm);
-    height: 50px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--planText.-frequency {
+    font-size: 25px;
+    line-height: 1.2;
   }
 }
 
@@ -353,18 +377,17 @@ body {
 
 .c-text--taxIn {
   color: #7e7676;
-  font-size: var(--fs-sm);
+  font-size: 12px;
   white-space: nowrap;
 }
 @media screen and (min-width: 1025px) {
   .c-text--taxIn {
-    font-size: var(--fs-md);
+    font-size: 15px;
   }
 }
 
 .c-text--detailContents {
   color: #7e7676;
-  font-size: 15px;
 }
 
 .c-text--check {
@@ -398,23 +421,23 @@ body {
 }
 
 .c-text--recommendedFrequency {
-  font-size: var(--fs-sm);
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .c-text--recommendedFrequency {
-    font-size: var(--fs-md);
-  }
 }
 
 .c-text--optionMenu,
 .c-text--optionPrice {
-  font-size: var(--fs-sm);
+  font-size: 15px;
 }
 @media screen and (min-width: 768px) {
   .c-text--optionMenu,
   .c-text--optionPrice {
-    font-size: var(--fs-md);
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-text--optionMenu,
+  .c-text--optionPrice {
+    font-size: 25px;
   }
 }
 
@@ -427,7 +450,7 @@ body {
   color: #e4abb2;
   font-weight: 500;
   padding-bottom: 10px;
-  font-size: var(--fs-sm);
+  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
   .c-text--result {
@@ -436,23 +459,18 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .c-text--result {
-    font-size: var(--fs-md);
+    font-size: 20px;
   }
 }
 
 .c-text--resultJp {
   color: #fff;
   font-weight: 700;
-  font-size: var(--fs-md);
+  font-size: 16px;
 }
 @media screen and (min-width: 768px) {
   .c-text--resultJp {
     text-align: center;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .c-text--resultJp {
-    font-size: var(--fs-lg);
   }
 }
 
@@ -462,12 +480,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .c-text--resultLabel {
-    font-size: var(--fs-sm);
-  }
-}
-@media screen and (min-width: 1025px) {
-  .c-text--resultLabel {
-    font-size: var(--fs-md);
+    font-size: 12px;
   }
 }
 
@@ -475,18 +488,6 @@ body {
 .c-text--resultOption {
   color: #7e7676;
   font-weight: 600;
-}
-@media screen and (min-width: 768px) {
-  .c-text--resultPlan,
-  .c-text--resultOption {
-    font-size: var(--fs-xs);
-  }
-}
-@media screen and (min-width: 1025px) {
-  .c-text--resultPlan,
-  .c-text--resultOption {
-    font-size: var(--fs-md);
-  }
 }
 
 .c-text--resultPrice,
@@ -611,7 +612,7 @@ body {
 // Project
 // -----------------------------------------------------------------*/
 .p-applyWrap {
-  margin: 30px 30px 60px;
+  margin: 30px 13px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -634,7 +635,7 @@ body {
 
 .p-faqWrap {
   background-color: #eecfda;
-  padding: 25px 30px;
+  padding: 25px 13px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -753,12 +754,7 @@ body {
 }
 
 .p-footerMenu__wrap {
-  padding: 64px 30px 32px;
-}
-@media screen and (min-width: 768px) {
-  .p-footerMenu__wrap {
-    padding: 64px 50px 32px;
-  }
+  padding: 64px 13px 32px;
 }
 
 .p-footerMenu__navSp {
@@ -830,17 +826,16 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .p-frequencyBox__wrap {
     gap: 15px;
-    margin: 20px;
   }
 }
 
 .p-frequencyBox {
-  padding: 10px;
+  padding: 12px;
   background-color: #fff;
   border-radius: 15px;
   display: flex;
@@ -850,7 +845,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-frequencyBox {
-    padding: 20px 10px;
     min-width: 100px;
   }
 }
@@ -874,12 +868,27 @@ body {
     gap: 12px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-headerMenu {
+    gap: 45px;
+  }
+}
+
+.p-headerMenu__list {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-headerMenu__list {
+    display: flex;
+    gap: 32px;
+  }
+}
 
 .p-hamburgerMenu {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .p-hamburgerMenu {
@@ -891,6 +900,11 @@ body {
   opacity: 0.7;
   border-radius: 10px;
 }
+@media screen and (min-width: 1025px) {
+  .p-hamburgerMenu {
+    display: none;
+  }
+}
 
 .p-hamburgerMenu__header {
   display: flex;
@@ -901,7 +915,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .p-hamburgerMenu__header {
-    margin: 25px;
+    margin: 15px 30px;
   }
 }
 .p-hamburgerMenu__header::after {
@@ -911,7 +925,12 @@ body {
   height: 1px;
   background-color: #bebbbd;
   transform: scaleY(0.5);
-  margin: 20px -15px 0;
+  margin: 15px -15px 0;
+}
+@media screen and (min-width: 768px) {
+  .p-hamburgerMenu__header::after {
+    margin: 20px -15px 0;
+  }
 }
 
 .p-hamburgerMenu__body {
@@ -954,12 +973,12 @@ body {
 
 .p-hamburgerMenu__item {
   padding: 10px 0;
-  font-size: var(--fs-sm);
+  font-size: 15px;
   font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .p-hamburgerMenu__item {
-    font-size: var(--fs-md);
+    font-size: 23px;
   }
 }
 
@@ -1021,7 +1040,13 @@ body {
   border-radius: 50%;
   border: 2px solid #ccc;
   flex-shrink: 0;
-  margin-right: 5px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 1025px) {
+  .p-optionBox__check {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .p-optionBox__input:checked + .p-optionBox__check {
@@ -1126,7 +1151,7 @@ body {
 }
 
 .p-result__wrap {
-  margin: 0 30px;
+  margin: 0 13px;
   background-color: #f5f3f7;
   border-radius: 15px;
   border: 1px solid #db5e6f;
@@ -1145,11 +1170,6 @@ body {
   align-items: center;
   border-radius: 15px 15px 0 0;
   padding: 20px 0;
-}
-@media screen and (min-width: 768px) {
-  .p-result__title {
-    padding: 20px 15px;
-  }
 }
 
 .p-result {
@@ -1185,14 +1205,14 @@ body {
   .p-simulation {
     display: flex;
     position: relative;
-    margin: 48px 0;
-    gap: 15px;
+    margin: 0 32px 80px;
+    gap: 24px;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-simulation {
-    margin: 48px 50px;
-    gap: 30px;
+    margin: 48px 42px;
+    gap: 32px;
   }
 }
 
@@ -1210,22 +1230,22 @@ body {
     position: sticky;
     top: 72px;
     align-self: flex-start;
-    margin: 0 20px 0 0;
   }
 }
 
 .p-stepWrap {
-  margin: 48px 30px;
+  margin: 48px 13px;
 }
 @media screen and (min-width: 768px) {
   .p-stepWrap {
-    margin: 0 0 50px 30px;
+    margin: 0 0 64px;
   }
   .p-stepWrap:first-child {
     margin-top: 0;
   }
   .p-stepWrap:last-child {
-    margin: 50px 0 0 30px;
+    margin-top: 64px;
+    margin-bottom: 0;
   }
 }
 
@@ -1238,13 +1258,13 @@ body {
 
 .p-stepWrap__frequency {
   background-color: #eecfda;
-  padding: 48px 30px;
+  padding: 48px 13px;
 }
 @media screen and (min-width: 768px) {
   .p-stepWrap__frequency {
-    padding: 48px 15px;
+    padding: 40px 124x;
     border-radius: 15px;
-    margin-left: 15px;
+    margin: 0 -24px;
   }
 }
 
@@ -1259,11 +1279,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 10px 10px;
+  margin: 0 10px 13px;
 }
 @media screen and (min-width: 768px) {
   .p-title {
-    margin: 0 40px 40px;
+    margin: 0 32px 32px;
   }
 }
 
@@ -1292,9 +1312,23 @@ body {
     display: inline;
   }
 }
+@media screen and (min-width: 1025px) {
+  .u-tabOnly__plan {
+    display: none;
+  }
+}
+
+.u-tabOnly__titleText {
+  display: inline;
+}
+@media screen and (min-width: 768px) {
+  .u-tabOnly__titleText {
+    display: none;
+  }
+}
 
 .u-marginBottom {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .u-marginRight10 {

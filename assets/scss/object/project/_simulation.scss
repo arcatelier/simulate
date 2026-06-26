@@ -4,13 +4,13 @@
   @include tab {
     display: flex;
     position: relative;
-    margin: 48px 0;
-    gap: 15px;
+    margin: 0 32px 80px;
+    gap: 24px;
   }
 
   @include pc {
-    margin: 48px 50px;
-    gap: 30px;
+    margin: 48px 42px;
+    gap: 32px;
   }
 }
 
@@ -28,6 +28,5 @@
     position: sticky;
     top: 72px;
     align-self: flex-start;
-    margin: 0 20px 0 0;
   }
 }

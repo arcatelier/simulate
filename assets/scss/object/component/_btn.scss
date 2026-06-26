@@ -6,16 +6,17 @@
   color: white;
   background-color: #db5e6f;
   padding: 5px 13px;
-  border-radius: 15px;
+  border-radius: 25px;
   cursor: pointer;
 
   @include tab {
-    font-size: 25px;
+    font-size: 18px;
+    padding: 10px 24px;
   }
 }
 
 .c-btn--close {
-  font-size: 20px;
+  font-size: 25px;
   width: 30px;
   height: 30px;
   color: gray;
@@ -25,6 +26,12 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+
+  @include tab {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
 
   @include pc {
     font-size: 50px;
@@ -39,9 +46,9 @@
   color: #fff;
   font-weight: 700;
   background-color: #db5e6f;
-  font-size: var(--fs-sm);
-  padding: 10px 0;
-  border-radius: 15px;
+  font-size: 17px;
+  padding: 14px 24px;
+  border-radius: 25px;
 
   @include pc {
     font-size: var(--fs-md);
@@ -51,7 +58,7 @@
 .c-btn--footer {
   color: #949090;
   padding: 10px 0;
-  font-size: var(--fs-xs);
+  font-size: 17px;
 
   @include pc {
     font-size: var(--fs-md);

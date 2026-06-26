@@ -18,4 +18,16 @@
   @include tab {
     display: inline;
   }
+
+  @include pc {
+    display: none;
+  }
+}
+
+.u-tabOnly__titleText {
+  display: inline;
+
+  @include tab {
+    display: none;
+  }
 }

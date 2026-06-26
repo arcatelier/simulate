@@ -1,11 +1,7 @@
 @use '../../foundation/mixin' as *;
 
 .p-footerMenu__wrap {
-  padding: 64px 30px 32px;
-
-  @include tab {
-    padding: 64px 50px 32px;
-  }
+  padding: 64px 13px 32px;
 }
 
 .p-footerMenu__navSp {

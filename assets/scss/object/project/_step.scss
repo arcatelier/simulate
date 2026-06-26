@@ -1,17 +1,18 @@
 @use '../../foundation/mixin' as *;
 
 .p-stepWrap {
-  margin: 48px 30px;
+  margin: 48px 13px;
 
   @include tab {
-    margin: 0 0 50px 30px;
+    margin: 0 0 64px;
 
     &:first-child {
       margin-top: 0;
     }
 
     &:last-child {
-      margin: 50px 0 0 30px;
+      margin-top: 64px;
+      margin-bottom: 0;
     }
   }
 }
@@ -25,12 +26,12 @@
 
 .p-stepWrap__frequency {
   background-color: #eecfda;
-  padding: 48px 30px;
+  padding: 48px 13px;
 
   @include tab {
-    padding: 48px 15px;
+    padding: 40px 124x;
     border-radius: 15px;
-    margin-left: 15px;
+    margin: 0 -24px;
   }
 }
 

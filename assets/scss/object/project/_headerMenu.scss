@@ -8,4 +8,17 @@
   @include tab {
     gap: 12px;
   }
+
+  @include pc {
+    gap: 45px;
+  }
+}
+
+.p-headerMenu__list {
+  display: none;
+
+  @include pc {
+    display: flex;
+    gap: 32px;
+  }
 }

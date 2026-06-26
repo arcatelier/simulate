@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px;
 
   @include tab {
     gap: 5px;
@@ -14,6 +14,10 @@
     background-color: rgba(138, 126, 115, 0.25);
     opacity: 0.7;
     border-radius: 10px;
+  }
+
+  @include pc {
+    display: none;
   }
 }
 
@@ -25,7 +29,7 @@
   margin: 15px;
 
   @include tab {
-    margin: 25px;
+    margin: 15px 30px;
   }
 
   &::after {
@@ -35,7 +39,11 @@
     height: 1px;
     background-color: #bebbbd;
     transform: scaleY(0.5);
-    margin: 20px -15px 0;
+    margin: 15px -15px 0;
+
+    @include tab {
+      margin: 20px -15px 0;
+    }
   }
 }
 
@@ -79,11 +87,11 @@
 
 .p-hamburgerMenu__item {
   padding: 10px 0;
-  font-size: var(--fs-sm);
+  font-size: 15px;
   font-weight: 500;
 
   @include tab {
-    font-size: var(--fs-md);
+    font-size: 23px;
   }
 }
 
