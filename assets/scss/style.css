@@ -42,6 +42,10 @@ body {
   width: 100%;
   z-index: 1000;
   background-color: #f0e8eb;
+  transition: box-shadow 0.3s ease;
+}
+.l-header.is-scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 768px) {
   .l-header {
@@ -159,6 +163,11 @@ body {
   border-radius: 50%;
   color: #e9bcc2;
   border: 1px solid #e9bcc2;
+}
+
+.c-btn--answer.is-open {
+  color: #e08f9a;
+  border-color: #e08f9a;
 }
 
 .c-img--headerLogo,

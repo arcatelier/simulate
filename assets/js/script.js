@@ -2,6 +2,18 @@ window.addEventListener("load", () => {
   document.body.classList.add("is-show");
 
   /**
+  * スクロール時のヘッダー下部の影の処理
+  */
+  window.addEventListener("scroll", function(){
+    const header = document.querySelector(".l-header");
+    if(window.scrollY > 0) {
+      header.classList.add("is-scrolled");
+    } else {
+      header.classList.remove("is-scrolled");
+    }
+  });
+
+  /**
   * ハンバーガーメニューコンテンツボタン制御処理
   */
   function changeButtonText() {
@@ -39,13 +51,49 @@ window.addEventListener("load", () => {
   }
 
   /**
+  * プラン選択後次のstepへの移動処理
+  */
+  function scrollToNext(targetSelector) {
+    const target = document.querySelector(targetSelector);
+    if(!target) return;
+
+    const headerHeight = document.querySelector(".l-header").offsetHeight;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+    window.scrollTo ({
+      top: targetTop,
+      behavior: "smooth"
+    });
+  }
+
+  function selectCard(selector) {
+    const cards = document.querySelectorAll(selector);
+
+    cards.forEach(function(card) {
+      card.addEventListener("click", function(){
+        cards.forEach(function(item){
+          item.classList.remove("is-selected");
+        });
+        card.classList.add("is-selected");
+        resultPrice();
+
+        // プランを選んだら頻度へ、頻度を選んだら オプションへスクロール
+        if(selector === ".js-planBox") {
+          scrollToNext(".p-stepWrap__frequency");
+        } else if (selector === ".js-frequencyBox") {
+          scrollToNext(".p-stepWrap:last-of-type");
+        }
+      })
+    })
+  }
+
+  /**
   * オプション選択後の枠色変更の処理
   */
   function toggleOption(){
     const optionBoxes = document.querySelectorAll(".p-optionBox");
     const noneBox = document.querySelector(".js-option-none");
     const noneCheckbox = noneBox.querySelector(".p-optionBox__input");
-
 
     optionBoxes.forEach(function(box) {
       const checkbox = box.querySelector(".p-optionBox__input");
@@ -182,6 +230,7 @@ window.addEventListener("load", () => {
       button.addEventListener("click",function(){
         const answer = button.closest(".p-faqItem").querySelector(".p-faqAnswer");
         answer.classList.toggle("is-open");
+        button.classList.toggle("is-open");
 
         if(answer.classList.contains("is-open")){
           button.textContent = "-";
@@ -189,7 +238,7 @@ window.addEventListener("load", () => {
           button.textContent = "+";
         }
       });
-    });  
+    }); 
   }
 
   changeButtonText();
@@ -198,4 +247,11 @@ window.addEventListener("load", () => {
   toggleOption();
   selectButton(".js-faqTab");
   toggleFaq();
+
+  const defaultPlan = document.querySelector(`.js-planBox[data-plan="standard"]`);
+  const defaultFrequency = document.querySelector(`.js-frequencyBox[data-frequency=weekly]`);
+
+  if(defaultPlan) defaultPlan.classList.add("is-selected");
+  if(defaultFrequency) defaultFrequency.classList.add("is-selected");
+  resultPrice();
 });

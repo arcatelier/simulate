@@ -11,6 +11,11 @@
   width: 100%;
   z-index: 1000;
   background-color: #f0e8eb;
+  transition: box-shadow 0.3s ease;
+
+  &.is-scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
 
   @include tab  {
     padding: 15px 30px;
