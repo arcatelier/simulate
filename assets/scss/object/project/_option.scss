@@ -6,11 +6,10 @@
   background-color: #f5f3f7;
   border: 2px solid #f1d5dc;
   border-radius: 15px;
-  padding: 15px;
-  margin-bottom: 15px;
+  padding: 16px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @include tab {
+    height: 89px;
   }
 }
 
@@ -29,6 +28,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 16px;
 }
 
 .p-optionBox__input {
@@ -60,5 +60,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.p-optionBox__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @include tab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

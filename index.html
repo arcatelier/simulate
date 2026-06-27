@@ -56,7 +56,7 @@
     <div class="p-title">
       <p class="c-text--title">料金シミュレーター</p>
       <h1 class="c-text--mainTitle">あなたに合ったコースを簡単診断</h1>
-      <p class="c-text--titleContents">気になるお悩みやご希望に合ったプランを、<br class="u-tabOnly__titleText">簡単にシミュレーションできます。</p>
+      <p class="c-text--titleContents">気になるお悩みやご希望に合ったプランを、<br class="u-tabOnly__text">簡単にシミュレーションできます。</p>
     </div>
     <div class="p-simulation">
       <div class="p-simulation__contents">
@@ -160,53 +160,55 @@
               <p class="c-text--planText -frequency">マイペースに継続</p>
             </label>
           </div>
-          <p class="c-text--recommendedFrequency">週1回～月2回の通院で<br>効果を実感しやすくなります</p>
+          <p class="c-text--recommendedFrequency">週1回～月2回の通院で<br class="u-tabOnly__text">効果を実感しやすくなります</p>
         </section>
         <section class="p-stepWrap"> <!---オプションを選択--->
           <div class="p-step">
             <p class="c-text--number u-marginRight10">3</p>
             <p class="c-text--plan">オプションを選ぶ</p>
           </div>
-          <label class="p-optionBox" data-price="6000">
-            <input type="checkbox" class="p-optionBox__input">
-            <span class="p-optionBox__check"></span>
-            <div class="p-option">
-              <p class="c-text--optionMenu">整体施術60分 1回追加</p>
-              <p class="c-text--optionPrice">¥6,000</p>
-            </div>
-          </label>
-          <label class="p-optionBox" data-price="3000">
-            <input type="checkbox" class="p-optionBox__input">
-            <span class="p-optionBox__check"></span>
-            <div class="p-option">
-              <p class="c-text--optionMenu">整体施術30分延長</p>
-              <p class="c-text--optionPrice">¥3,000</p>
-            </div>
-          </label>
-          <label class="p-optionBox" data-price="9000">
-            <input type="checkbox" class="p-optionBox__input">
-            <span class="p-optionBox__check"></span>
-            <div class="p-option">
-              <p class="c-text--optionMenu">フォトフェイシャル20分1回追加</p>
-              <p class="c-text--optionPrice">¥9,000</p>
-            </div>
-          </label>
-          <label class="p-optionBox" data-price="5000">
-            <input type="checkbox" class="p-optionBox__input">
-            <span class="p-optionBox__check"></span>
-            <div class="p-option">
-              <p class="c-text--optionMenu">美容鍼1回追加</p>
-              <p class="c-text--optionPrice">¥5,000</p>
-            </div>
-          </label>
-          <label class="p-optionBox js-option-none" data-price="0">
-            <input type="checkbox" class="p-optionBox__input">
-            <span class="p-optionBox__check"></span>
-            <div class="p-option">
-              <p class="c-text--optionMenu">オプションなし</p>
-              <p class="c-text--optionPrice">¥0</p>
-            </div>
-          </label>
+          <div class="p-optionBox__wrap">
+            <label class="p-optionBox" data-price="6000">
+              <input type="checkbox" class="p-optionBox__input">
+              <span class="p-optionBox__check"></span>
+              <div class="p-option">
+                <p class="c-text--optionMenu">整体施術60分 1回追加</p>
+                <p class="c-text--optionPrice">¥6,000</p>
+              </div>
+            </label>
+            <label class="p-optionBox" data-price="3000">
+              <input type="checkbox" class="p-optionBox__input">
+              <span class="p-optionBox__check"></span>
+              <div class="p-option">
+                <p class="c-text--optionMenu">整体施術30分延長</p>
+                <p class="c-text--optionPrice">¥3,000</p>
+              </div>
+            </label>
+            <label class="p-optionBox" data-price="9000">
+              <input type="checkbox" class="p-optionBox__input">
+              <span class="p-optionBox__check"></span>
+              <div class="p-option">
+                <p class="c-text--optionMenu">フォトフェイシャル20分1回追加</p>
+                <p class="c-text--optionPrice">¥9,000</p>
+              </div>
+            </label>
+            <label class="p-optionBox" data-price="5000">
+              <input type="checkbox" class="p-optionBox__input">
+              <span class="p-optionBox__check"></span>
+              <div class="p-option">
+                <p class="c-text--optionMenu">美容鍼1回追加</p>
+                <p class="c-text--optionPrice">¥5,000</p>
+              </div>
+            </label>
+            <label class="p-optionBox js-option-none" data-price="0">
+              <input type="checkbox" class="p-optionBox__input">
+              <span class="p-optionBox__check"></span>
+              <div class="p-option">
+                <p class="c-text--optionMenu">オプションなし</p>
+                <p class="c-text--optionPrice">¥0</p>
+              </div>
+            </label>
+          </div>
         </section>
       </div>
       <div class="p-simulation__result">
@@ -249,102 +251,108 @@
         </div>
       </div>
     </div>
-    <div class="p-faqWrap"> <!---FAQ--->
+    <section class="p-faq__heading"> <!---FAQ--->
       <p class="c-text--faqSubTitle">FAQ</p>
       <h2 class="p-faqMainTitle">よくある質問</h2>
       <p class="c-text--faqTitleContents">サービスやプランに関する疑問にお答えします</p>
-      <section class="p-faq">
-        <div class="p-faqTab">
-          <button class="p-faqTab__button is-selected js-faqTab" data-target="treatment">施術に関して</button>
-          <button class="p-faqTab__button js-faqTab" data-target="payment">支払いに関して</button>
+      <div class="p-faqTab__category">
+        <p class="c-text--category">施術に関して5問</p>
+        <p class="c-text--category">支払いに関して4問</p>
+      </div>
+    </section>
+    <section class="p-faq__body">
+      <div class="p-faqTab">
+        <button class="p-faqTab__button is-selected js-faqTab" data-target="treatment">施術に関して</button>
+        <button class="p-faqTab__button js-faqTab" data-target="payment">支払いに関して</button>
+      </div>
+      <dl class="p-faqContents is-show" id="treatment"> <!---施術に関するFAQ--->
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">01</span>
+            <span class="p-faqQuestion__text">初めてでも施術を受けられますか？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">はい。初回はカウンセリング（所要時間60分程度）を行い、お悩みや要望に合わせて施術内容をご提案します。</dd>
         </div>
-        <dl class="p-faqContents is-show" id="treatment"> <!---施術に関するFAQ--->
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">01</span>
-              <span class="p-faqQuestion__text">初めてでも施術を受けられますか？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">はい。初回はカウンセリング（所要時間60分程度）を行い、お悩みや要望に合わせて施術内容をご提案します。</dd>
-          </div>
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">02</span>
-              <span class="p-faqQuestion__text">フォトフェイシャルとは？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">光エネルギーを肌に照射し、シミ・そばかす・くすみなどの肌悩みにアプローチする美容施術です。</dd>
-          </div>
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">03</span>
-              <span class="p-faqQuestion__text">施術中に痛みはありますか？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">施術内容によって異なりますが、無理のない範囲で施術を進めます。不安な点がございましたら事前にご相談ください。</dd>
-          </div>
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">04</span>
-              <span class="p-faqQuestion__text">メイクはいつからできますか？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">肌状態に問題がなければ、当日から可能です。</dd>
-          </div>
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">05</span>
-              <span class="p-faqQuestion__text">複数の施術を同日に受けることはできますか？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">お肌やお身体の状態によっては別日でのご案内となる場合があります。詳しくはカウンセリング時にご相談ください。</dd>
-          </div>
-        </dl>
-        <dl class="p-faqContents" id="payment"> <!---支払いに関するFAQ--->
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">01</span>
-              <span class="p-faqQuestion__text">支払方法を教えてください。</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">現金、クレジットカード各種、電子マネーからお選びいただけます。</dd>
-          </div>
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">02</span>
-              <span class="p-faqQuestion__text">分割払いはできますか？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">クレジットカードでのお支払いのみ、分割払いをご利用いただけます。</dd>
-          </div>
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">03</span>
-              <span class="p-faqQuestion__text">追加料金が発生することはありますか？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">コースの途中でオプションを追加すると料金が変動する場合がございます。</dd>
-          </div>
-          <div class="p-faqItem">
-            <dt class="p-faqQuestion">
-              <span class="c-text--faq">04</span>
-              <span class="p-faqQuestion__text">キャンセル料はかかりますか？</span>
-              <button class="c-btn--answer js-faqButton">+</button>
-            </dt>
-            <dd class="p-faqAnswer">施術日の前日まで発生しませんが当日キャンセルした場合、3,300円（税込）のキャンセル料をいただく場合がございます。</dd>
-          </div>
-        </dl>
-      </section>
-    </div>
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">02</span>
+            <span class="p-faqQuestion__text">フォトフェイシャルとは？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">光エネルギーを肌に照射し、シミ・そばかす・くすみなどの肌悩みにアプローチする美容施術です。</dd>
+        </div>
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">03</span>
+            <span class="p-faqQuestion__text">施術中に痛みはありますか？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">施術内容によって異なりますが、無理のない範囲で施術を進めます。不安な点がございましたら事前にご相談ください。</dd>
+        </div>
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">04</span>
+            <span class="p-faqQuestion__text">メイクはいつからできますか？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">肌状態に問題がなければ、当日から可能です。</dd>
+        </div>
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">05</span>
+            <span class="p-faqQuestion__text">複数の施術を同日に受けることはできますか？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">お肌やお身体の状態によっては別日でのご案内となる場合があります。詳しくはカウンセリング時にご相談ください。</dd>
+        </div>
+      </dl>
+      <dl class="p-faqContents" id="payment"> <!---支払いに関するFAQ--->
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">01</span>
+            <span class="p-faqQuestion__text">支払方法を教えてください。</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">現金、クレジットカード各種、電子マネーからお選びいただけます。</dd>
+        </div>
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">02</span>
+            <span class="p-faqQuestion__text">分割払いはできますか？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">クレジットカードでのお支払いのみ、分割払いをご利用いただけます。</dd>
+        </div>
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">03</span>
+            <span class="p-faqQuestion__text">追加料金が発生することはありますか？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">コースの途中でオプションを追加すると料金が変動する場合がございます。</dd>
+        </div>
+        <div class="p-faqItem">
+          <dt class="p-faqQuestion">
+            <span class="c-text--faq">04</span>
+            <span class="p-faqQuestion__text">キャンセル料はかかりますか？</span>
+            <button class="c-btn--answer js-faqButton">+</button>
+          </dt>
+          <dd class="p-faqAnswer">施術日の前日まで発生しませんが当日キャンセルした場合、3,300円（税込）のキャンセル料をいただく場合がございます。</dd>
+        </div>
+      </dl>
+    </section>
   </main>
   <footer class="l-footer">
     <div class="p-footerMenu__wrap">
-      <a class="c-link" href="#"><img class="c-img--footerLogo" src="assets/img/logo_footer.png" alt="ロゴ"></a>
-      <p class="c-text--footerContents">
-        美容と整体をもっと身近に。<br>
-        あなたのお悩みに寄り添う、<br>
-        オーダーメイドケアを。
-      </p>
+      <div class="p-footerMenu__heading">
+        <a class="c-link" href="#"><img class="c-img--footerLogo" src="assets/img/logo_footer.png" alt="ロゴ"></a>
+        <p class="c-text--footerContents">
+          美容と整体をもっと身近に。<br>
+          あなたのお悩みに寄り添う、<br>
+          オーダーメイドケアを。
+        </p>
+      </div>
       <nav class="p-footerMenu__navSp"> <!---SP--->
         <div class="p-footerMenu__left">
           <div class="p-footerMenu"> <!---サービス--->
@@ -417,7 +425,7 @@
           </div>
         </div>
       </nav>
-      <nav class="p-footerMenu__navPc"> <!---PC--->
+      <nav class="p-footerMenu__navTab"> <!---PC--->
         <div class="p-footerMenu"> <!---サービス--->
           <h2 class="p-footerMenu__title">サービス</h2>
           <ul class="p-footerMenu__list">
@@ -485,9 +493,9 @@
           </ul>
         </div>
       </nav>
-      <div class="c-line--footer"></div>
-      <p class="c-text--footer">©2026 Simulate Inc.</p>
     </div>
+    <div class="c-line--footer"></div>
+    <p class="c-text--footer">©2026 Simulate Inc.</p>
   </footer>
   <script src="assets/js/script.js"></script>
 </body>

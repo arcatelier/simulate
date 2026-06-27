@@ -6,7 +6,7 @@
   color: white;
   background-color: #db5e6f;
   padding: 5px 13px;
-  border-radius: 25px;
+  border-radius: var(--border-radius);
   cursor: pointer;
 
   @include tab {
@@ -48,36 +48,23 @@
   background-color: #db5e6f;
   font-size: 17px;
   padding: 14px 24px;
-  border-radius: 25px;
-
-  @include pc {
-    font-size: var(--fs-md);
-  }
+  border-radius: var(--border-radius);
 }
 
 .c-btn--footer {
   color: #949090;
   padding: 10px 0;
-  font-size: 17px;
-
-  @include pc {
-    font-size: var(--fs-md);
-  }
 }
 
 .c-btn--applyButton {
   color: #fff;
   padding: 20px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
 
   @include tab {
-    padding: 15px;
-    font-size: var(--fs-sm);
-  }
-
-  @include pc {
-    font-size: var(--fs-md);
+    font-size: 18px;
+    padding: 30px;
   }
 }
 
@@ -85,18 +72,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   padding: 0;
   font-size: 17px;
   line-height: 1;
   border-radius: 50%;
   color: #e9bcc2;
   border: 1px solid #e9bcc2;
-
-  @include tab {
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-  }
 }

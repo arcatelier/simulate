@@ -24,6 +24,10 @@
       margin-right: 0;
     }
   }
+
+  @include pc {
+    padding: 20px 15px 65px;
+  }
 }
 
 .p-planBox--light {
@@ -52,15 +56,11 @@
 
 .p-planBox__recommendedWrap {
   position: absolute;
-  top: -16px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   margin-bottom: -20px;
-
-  @include tab {
-    top: -20px;
-  }
 }
 
 .p-plan__detail.-campaign {

@@ -38,11 +38,11 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
   background-color: #db5e6f;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
 
   @include pc {
     width: 60px;
@@ -53,7 +53,7 @@
 
 .c-text--plan {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
 
   @include tab {
     font-size: 24px;
@@ -68,7 +68,7 @@
   text-align: center;
   font-weight: 700;
   padding-bottom: 5px;
-  font-size: 20px;
+  font-size: 16px;
 
   @include tab {
     display: flex;
@@ -76,12 +76,6 @@
     justify-content: center;
     height: 70px;
     font-size: 18px;
-  }
-
-  @include pc {
-    font-size: 20px;
-    padding: 10px 0;
-    height: 90px;
   }
 }
 
@@ -91,11 +85,6 @@
 
   @include tab {
     font-size: 16px;
-  }
-
-  @include pc {
-    font-size: 30px;
-    padding-bottom: 10px;
   }
 }
 
@@ -120,12 +109,7 @@
   align-items: center;
 
   @include tab {
-    height: 40px;
-  }
-
-  @include pc {
-    font-size: 25px;
-    line-height: 1.2;
+    height: auto;
   }
 }
 
@@ -180,18 +164,11 @@
   color: #fff;
   background-color: #db5e6f;
   padding: 5px 15px;
-  border-radius: 15px;
-  font-size: 15px;
+  border-radius: var(--border-radius);
+  font-size: 12px;
   text-align: center;
   white-space: nowrap;
-
-  @include tab {
-    font-size: 13px;
-  }
-
-  @include pc {
-    font-size: 20px;
-  }
+  font-weight: 700;
 }
 
 .c-text--recommendedFrequency {
@@ -200,15 +177,7 @@
 
 .c-text--optionMenu,
 .c-text--optionPrice {
-  font-size: 15px;
-
-  @include tab {
-    font-size: 20px;
-  }
-
-  @include pc {
-    font-size: 25px;
-  }
+  font-size: 14px;
 }
 
 .c-text--optionPrice {
@@ -224,10 +193,6 @@
 
   @include tab {
     text-align: center;
-  }
-
-  @include pc {
-    font-size: 20px;
   }
 }
 
@@ -261,102 +226,63 @@
   color: #db5e6f;
   font-weight: 600;
   text-align: end;
-
-  @include tab {
-    font-size: var(--fs-sm);
-  }
-
-  @include pc {
-    font-size: var(--fs-md);
-  }
 }
 
 .c-text--total {
   color: #db5e6f;
   font-weight: 700;
   padding-bottom: 7px;
-
-  @include pc {
-    font-size: var(--fs-md);
-  }
+  font-size: 12px;
 }
 
 .c-text--totalPayment {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-
-  @include pc {
-    font-size: var(--fs-md);
-  }
 }
 
 .c-text--totalPrice {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 900;
   font-family:  "Arial Black", sans-serif;
   color: #be4e5d;
-
-  @include tab {
-    font-size: var(--fs-lg);
-  }
-
-  @include pc {
-    font-size: var(--fs-xl);
-  }
-}
-
-.c-text--totalTax {
-  @include pc {
-    font-size: var(--fs-md);
-  }
 }
 
 .c-text--faqSubTitle {
   color: #db5e6f;
-  font-size: var(--fs-md);
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 5px;
 
   @include tab {
-    font-size: var(--fs-lg);
+    font-size: 16px;
   }
 }
 
 .c-text--faqTitleContents {
-  font-size: var(--fs-xs);
   color: #7e7676;
+  font-size: 12px;
+}
 
-  @include tab {
-    font-size: var(--fs-sm);
-  }
+.c-text--category {
+  color: #7e7676;
+  padding: 6px 8px;
+  border-radius: 25px;
+  border: 1px solid #7e7676;
 }
 
 .c-text--faq {
   color: #e596a1;
   font-weight: 700;
   padding-right: 10px;
+  font-size: 12px;
 }
 
 .c-text--footerContents {
   font-size: 13px;
-  padding-top: 10px;
-
-  @include tab {
-    font-size: var(--fs-sm);
-  }
-
-  @include pc {
-    font-size: var(--fs-md);
-  }
+  padding-top: 16px;
 }
 
 .c-text--footer {
-  padding: 15px 0 0;
+  padding: 32px 0 0;
   color: #afa9ac;
-  font-size: var(--fs-xs);
-
-  @include tab {
-    font-size: var(--fs-md);
-    padding: 30px 0 0;
-  }
+  font-size: 12px;
 }

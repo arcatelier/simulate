@@ -1,12 +1,12 @@
 @use '../../foundation/mixin' as *;
 
 .p-applyWrap {
-  margin: 30px 13px 60px;
+  margin: 16px 13px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #db5e6f;
-  border-radius: 15px;
+  border-radius: var(--border-radius);
 
   @include tab {
     margin: 20px 0 0;

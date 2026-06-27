@@ -3,4 +3,9 @@
 .l-footer {
   background-color: #5c4a54;
   color: #fff;
+  padding: 64px 16px 32px;
+
+  @include pc {
+    padding: 64px 32px 32px;
+  }
 }
