@@ -238,7 +238,7 @@ window.addEventListener("load", () => {
           button.textContent = "+";
         }
       });
-    }); 
+    });
   }
 
   changeButtonText();
@@ -248,8 +248,8 @@ window.addEventListener("load", () => {
   selectButton(".js-faqTab");
   toggleFaq();
 
-  const defaultPlan = document.querySelector(`.js-planBox[data-plan="standard"]`);
-  const defaultFrequency = document.querySelector(`.js-frequencyBox[data-frequency=weekly]`);
+  const defaultPlan = document.querySelector(`.js-planBox[data-plan="light"]`);
+  const defaultFrequency = document.querySelector(`.js-frequencyBox[data-frequency="weekly"]`);
 
   if(defaultPlan) defaultPlan.classList.add("is-selected");
   if(defaultFrequency) defaultFrequency.classList.add("is-selected");
