@@ -227,6 +227,10 @@ body {
   }
 }
 
+.c-text--mainTitle.-faq {
+  color: #7e7676;
+}
+
 .c-text--titleContents {
   text-align: center;
   color: #7e7676;
@@ -468,22 +472,6 @@ body {
   color: #be4e5d;
 }
 
-.c-text--faqSubTitle {
-  color: #db5e6f;
-  font-weight: 600;
-  padding-bottom: 5px;
-}
-@media screen and (min-width: 768px) {
-  .c-text--faqSubTitle {
-    font-size: 16px;
-  }
-}
-
-.c-text--faqTitleContents {
-  color: #7e7676;
-  font-size: 12px;
-}
-
 .c-text--category {
   color: #7e7676;
   padding: 6px 8px;
@@ -558,16 +546,6 @@ body {
 .p-faq__body {
   padding: 48px 13px;
   background-color: #ebdae0;
-}
-
-.p-faqMainTitle {
-  color: #7e7676;
-  padding-bottom: 10px;
-}
-@media screen and (min-width: 768px) {
-  .p-faqMainTitle {
-    font-size: 22px;
-  }
 }
 
 .p-faq {
