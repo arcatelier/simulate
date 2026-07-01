@@ -1,11 +1,12 @@
 @use '../../foundation/mixin' as *;
 
 .p-planBox {
-  padding: 25px;
+  padding: 24px;
   border: 2px solid #f1d5dc;
   background-color: #f5f3f7;
   border-radius: 15px;
-  display: block;
+  display:flex;
+  flex-direction:column;
   margin-bottom: 30px;
   position: relative;
 
@@ -16,17 +17,12 @@
   @include tab {
     margin-right: 16px;
     margin-bottom: 0;
-    padding: 20px 15px 50px;
     flex: 1;
     min-width: 0;
 
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  @include pc {
-    padding: 20px 15px 65px;
   }
 }
 
@@ -66,6 +62,5 @@
 .p-plan__detail.-campaign {
   background-color: #f3e9bd;
   border-radius: 15px;
-  margin: 0 -10px;
   padding: 8px 10px;
 }

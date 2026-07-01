@@ -20,6 +20,7 @@
 .p-stepWrap__tab {
   @include tab {
     display: flex;
+    align-items: stretch;
     margin-bottom: 50px;
   }
 }

@@ -93,16 +93,17 @@
 }
 
 .c-text--planText {
-  text-align: center;
+  text-align: left;
   color: #7e7676;
   font-size: 12px;
   display: flex;
   align-items: center;
 
   @include tab {
-    text-align: left;
-    max-height: 85px;
-    height: 100%;
+    height: auto;
+    display: block;
+    font-size: 13px;
+    line-height: 1.7;
   }
 }
 
